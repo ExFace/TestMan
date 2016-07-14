@@ -6,7 +6,7 @@ use exface\Core\Exceptions\ActionRuntimeException;
 /**
  * This action switches on the record mode in the ActionTest context
  * 
- * @author aka
+ * @author Andrej Kabachnik
  *
  */
 class CreateRedmineTicket extends CreateData {
@@ -52,8 +52,8 @@ class CreateRedmineTicket extends CreateData {
 
 {$soll}
 TEXT;
-		$ticket_object = $this->exface()->model()->get_object('REDMINE.ISSUE');
-		$result = $this->exface()->data()->create_data_sheet($ticket_object);
+		$ticket_object = $this->get_workbench()->model()->get_object('REDMINE.ISSUE');
+		$result = $this->get_workbench()->data()->create_data_sheet($ticket_object);
 		// First add all direct ticket attributes
 		foreach ($input->get_columns() as $col){
 			if (strpos($col->get_name(), 'REDMINE_TICKET__') === 0){
@@ -63,26 +63,26 @@ TEXT;
 
 		// Now the specially computed attributes
 		$result->set_cell_value('DESCRIPTION', 0, $description);
-		//$connection = $this->exface()->model()->get_object('REDMINE.UPLOAD')->get_data_connection()->get_current_connection();
-		foreach ($this->exface()->context()->get_scope_window()->get_context('Upload')->get_uploaded_file_paths() as $file){
+		//$connection = $this->get_workbench()->model()->get_object('REDMINE.UPLOAD')->get_data_connection()->get_current_connection();
+		foreach ($this->get_workbench()->context()->get_scope_window()->get_context('Upload')->get_uploaded_file_paths() as $file){
 			// $request = $connection->post('uploads.json', array('body' => fopen($file, 'r'))); // 500
 			// $request = $connection->post('uploads.json', array('headers' => ['debug' => true, 'Content-Type' =>  'application/octet-stream'], 'body' => fopen($file, 'r'))); // 500
 		}
 		
-		$this->exface()->context()->get_scope_window()->get_context('Upload')->clear_uploads();
+		$this->get_workbench()->context()->get_scope_window()->get_context('Upload')->clear_uploads();
 		$result->data_create();
 		
 		// The following is a workaround for a strange bug, that returns an Error 500 upon creating a ticket instead of a ticket number.
 		// The idea is simply to fetch the most recent ticket of the current user.
 		// IDEA This workaround should be removed once the redmine bug is fixed
-		$check = $this->exface()->data()->create_data_sheet($ticket_object);
+		$check = $this->get_workbench()->data()->create_data_sheet($ticket_object);
 		$check->add_filter_from_string('AUTHOR', $ticket_object->get_data_connection()->get_config_value('user_id'));
 		$check->get_columns()->add_from_expression($ticket_object->get_uid_alias());
 		$check->data_read();
 		$new_ticket_id = $check->get_cell_value($ticket_object->get_uid_alias(), 0);
 		
 		// Now save a reference for the newly created ticket for the test case
-		$ticket_ref = $this->exface()->data()->create_data_sheet($this->exface()->model()->get_object('EXFACE.TESTMAN.TICKET'));
+		$ticket_ref = $this->get_workbench()->data()->create_data_sheet($this->get_workbench()->model()->get_object('EXFACE.TESTMAN.TICKET'));
 		$ticket_ref->set_cell_value('TEST_CASE', 0, $input->get_cell_value('TEST_CASE', 0));
 		$ticket_ref->set_cell_value('REDMINE_TICKET', 0, $new_ticket_id);
 		$ticket_ref->data_create();
