@@ -52,7 +52,7 @@ class CreateRedmineTicket extends CreateData {
 
 {$soll}
 TEXT;
-		$ticket_object = $this->get_workbench()->model()->get_object('REDMINE.ISSUE');
+		$ticket_object = $this->get_workbench()->model()->get_object('axenox.RedmineConnector.ISSUE');
 		$result = $this->get_workbench()->data()->create_data_sheet($ticket_object);
 		// First add all direct ticket attributes
 		foreach ($input->get_columns() as $col){
