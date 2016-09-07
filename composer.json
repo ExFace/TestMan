@@ -1,18 +1,27 @@
 {
-	"name" : "ExFace/TestMan",
-	"description" : "Testmanager app for managing and tracking test cases",
-	"type" : "library",
-	"license" : "GPL-3.0+",
-	"authors" : [{
-			"name" : "Andrej Kabachnik",
-			"email" : "kabachnik@gmail.com",
-			"role" : "Creator"
-		}
-	],
-	"support" : {
-		"issues" : "https://github.com/exface/TestMan/issues"
-	},
-	"require" : {
-		"exface/core" : "~0.1"
-	}
+    "name": "ExFace/TestMan",
+    "description": "Testmanager app for managing and tracking test cases",
+    "type": "library",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Andrej Kabachnik",
+            "email": "kabachnik@gmail.com",
+            "role": "Creator"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/exface/TestMan/issues"
+    },
+    "require": {
+        "exface/core": "~0.1"
+    },
+    "extra": {
+        "app": {
+            "app_uid": "0x31370000000000000000000000000000",
+            "app_alias": "exface.TestMan",
+            "model_md5": "32171cd057dc8268011aef97288d4228",
+            "model_timestamp": "2016-03-18 14:21:10"
+        }
+    }
 }
