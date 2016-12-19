@@ -76,7 +76,7 @@ TEXT;
 		// The idea is simply to fetch the most recent ticket of the current user.
 		// IDEA This workaround should be removed once the redmine bug is fixed
 		$check = $this->get_workbench()->data()->create_data_sheet($ticket_object);
-		$check->add_filter_from_string('AUTHOR', $ticket_object->get_data_connection()->get_config_value('user_id'));
+		$check->add_filter_from_string('AUTHOR', $ticket_object->get_data_connection()->get_user_id());
 		$check->get_columns()->add_from_expression($ticket_object->get_uid_alias());
 		$check->data_read();
 		$new_ticket_id = $check->get_cell_value($ticket_object->get_uid_alias(), 0);
@@ -88,7 +88,7 @@ TEXT;
 		$ticket_ref->data_create();
 		
 		$this->set_result_data_sheet($result);
-		$this->set_result_message('New ticket <a target="_blank" href="' . $ticket_object->get_data_connection()->get_config_value('URL') . "issues/" . $new_ticket_id . '">#' . $new_ticket_id . '</a> created!');
+		$this->set_result_message('New ticket <a target="_blank" href="' . $ticket_object->get_data_connection()->get_url() . "issues/" . $new_ticket_id . '">#' . $new_ticket_id . '</a> created!');
 		return;
 	}
 }
