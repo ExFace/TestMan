@@ -1,5 +1,5 @@
 {
-    "name": "ExFace/TestMan",
+    "name": "axenox/TestMan",
     "description": "Testmanager app for managing and tracking test cases",
     "type": "library",
     "license": "GPL-3.0+",
@@ -11,7 +11,7 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/exface/TestMan/issues"
+        "issues": "https://github.com/axenox/TestMan/issues"
     },
     "require": {
         "exface/core": "~0.1"
