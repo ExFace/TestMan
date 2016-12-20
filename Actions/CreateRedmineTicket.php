@@ -1,4 +1,4 @@
-<?php namespace exface\TestMan\Actions;
+<?php namespace axenox\TestMan\Actions;
 
 use exface\Core\Actions\CreateData;
 use exface\Core\Exceptions\ActionRuntimeException;

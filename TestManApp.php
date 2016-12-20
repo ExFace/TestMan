@@ -1,5 +1,5 @@
 <?php
-namespace exface\TestMan;
+namespace axenox\TestMan;
 class TestManApp extends \exface\Core\CommonLogic\AbstractApp {
 	
 }

@@ -1,5 +1,5 @@
 {
-    "object_alias": "exface.Core.APP",
+    "object_alias": "exface.Core.ERROR",
     "columns": [
         {
             "expression": "CREATED_ON",
@@ -37,25 +37,32 @@
             "attribute_alias": "UID"
         },
         {
-            "expression": "PACKAGE",
-            "name": "PACKAGE",
+            "expression": "APP",
+            "name": "APP",
             "hidden": false,
             "data_type": "Relation",
-            "attribute_alias": "PACKAGE"
+            "attribute_alias": "APP"
         },
         {
-            "expression": "ALIAS",
-            "name": "ALIAS",
+            "expression": "ERROR_CODE",
+            "name": "ERROR_CODE",
             "hidden": false,
             "data_type": "String",
-            "attribute_alias": "ALIAS"
+            "attribute_alias": "ERROR_CODE"
         },
         {
-            "expression": "NAME",
-            "name": "NAME",
+            "expression": "ERROR_TEXT",
+            "name": "ERROR_TEXT",
             "hidden": false,
             "data_type": "String",
-            "attribute_alias": "NAME"
+            "attribute_alias": "ERROR_TEXT"
+        },
+        {
+            "expression": "FULL_ERROR_CODE",
+            "name": "FULL_ERROR_CODE",
+            "hidden": false,
+            "data_type": "String",
+            "attribute_alias": "FULL_ERROR_CODE"
         },
         {
             "expression": "LABEL",
@@ -65,28 +72,15 @@
             "attribute_alias": "LABEL"
         }
     ],
-    "rows": [
-        {
-            "CREATED_ON": "0000-00-00 00:00:00",
-            "MODIFIED_ON": "2016-12-20 09:32:17",
-            "CREATED_BY_USER": "",
-            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
-            "UID": "0x31370000000000000000000000000000",
-            "PACKAGE": "axenox\/TestMan",
-            "ALIAS": "axenox.TestMan",
-            "NAME": "axenox TestMan",
-            "LABEL": "axenox TestMan"
-        }
-    ],
     "totals_rows": [],
     "filters": {
         "operator": "AND",
         "conditions": [
             {
-                "expression": "UID",
+                "expression": "APP",
                 "comparator": "=",
                 "value": "0x31370000000000000000000000000000",
-                "object_alias": "exface.Core.APP"
+                "object_alias": "exface.Core.ERROR"
             }
         ],
         "nested_groups": []

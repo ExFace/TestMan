@@ -19,9 +19,9 @@
     "extra": {
         "app": {
             "app_uid": "0x31370000000000000000000000000000",
-            "app_alias": "exface.TestMan",
-            "model_md5": "24412a40fcc0dea273ff221689e97be5",
-            "model_timestamp": "2016-03-18 14:21:10"
+            "app_alias": "axenox.TestMan",
+            "model_md5": "6c5f1887051d9c360a302e599c41f53d",
+            "model_timestamp": "2016-12-20 09:32:17"
         }
     }
 }
