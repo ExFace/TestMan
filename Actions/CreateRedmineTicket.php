@@ -2,6 +2,7 @@
 
 use exface\Core\Actions\CreateData;
 use exface\Core\Exceptions\ActionRuntimeException;
+use exface\Core\Exceptions\Actions\ActionInputInvalidObjectError;
 
 /**
  * This action switches on the record mode in the ActionTest context
@@ -21,7 +22,7 @@ class CreateRedmineTicket extends CreateData {
 		
 		// Check if the input is OK
 		if (strcasecmp($input->get_meta_object()->get_alias_with_namespace(), 'exface.TestMan.TICKET') !== 0){
-			throw new ActionRuntimeException('Only TestMan tickets are accepted as input for "' . $this->get_alias_with_namespace() . '": "' . $input->get_meta_object()->get_alias_with_namespace() . '" given instead!');
+			throw new ActionInputInvalidObjectError($this, 'Only TestMan tickets are accepted as input for "' . $this->get_alias_with_namespace() . '": "' . $input->get_meta_object()->get_alias_with_namespace() . '" given instead!', '6T5DMUS');
 		}
 		
 		if ($exception = $input->get_cell_value('EXCEPTION', 0)){
