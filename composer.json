@@ -1,5 +1,5 @@
 {
-    "name": "axenox/TestMan",
+    "name": "axenox/testman",
     "description": "Testmanager app for managing and tracking test cases",
     "type": "library",
     "license": "GPL-3.0+",
