@@ -836,7 +836,7 @@
             "DATATYPE": "0x33000000000000000000000000000000",
             "DATA_ADDRESS": "(SELECT MAX([#alias#]tl.tested_on) FROM testlauf [#alias#]tl WHERE [#alias#]tl.test_case_id = [#alias#].id)",
             "OBJECT": "0x31323600000000000000000000000000",
-            "FORMATTER": "=datetime(LAST_TEST_TIME)",
+            "FORMATTER": "=DateTime(LAST_TEST_TIME)",
             "DISPLAYORDER": null,
             "LABELFLAG": "0",
             "UIDFLAG": "0",
