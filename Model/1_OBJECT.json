@@ -109,8 +109,8 @@
     ],
     "rows": [
         {
-            "CREATED_ON": "0000-00-00 00:00:00",
-            "MODIFIED_ON": "0000-00-00 00:00:00",
+            "CREATED_ON": "2011-01-01 00:00:00",
+            "MODIFIED_ON": "2011-01-01 00:00:00",
             "CREATED_BY_USER": "",
             "MODIFIED_BY_USER": "",
             "UID": "0x31323300000000000000000000000000",
@@ -126,8 +126,8 @@
             "DATA_ADDRESS": ""
         },
         {
-            "CREATED_ON": "0000-00-00 00:00:00",
-            "MODIFIED_ON": "0000-00-00 00:00:00",
+            "CREATED_ON": "2011-01-01 00:00:00",
+            "MODIFIED_ON": "2011-01-01 00:00:00",
             "CREATED_BY_USER": "",
             "MODIFIED_BY_USER": "",
             "UID": "0x31323400000000000000000000000000",
@@ -143,8 +143,8 @@
             "DATA_ADDRESS": "module"
         },
         {
-            "CREATED_ON": "0000-00-00 00:00:00",
-            "MODIFIED_ON": "0000-00-00 00:00:00",
+            "CREATED_ON": "2011-01-01 00:00:00",
+            "MODIFIED_ON": "2011-01-01 00:00:00",
             "CREATED_BY_USER": "",
             "MODIFIED_BY_USER": "",
             "UID": "0x31323500000000000000000000000000",
@@ -160,8 +160,8 @@
             "DATA_ADDRESS": "feature"
         },
         {
-            "CREATED_ON": "0000-00-00 00:00:00",
-            "MODIFIED_ON": "0000-00-00 00:00:00",
+            "CREATED_ON": "2011-01-01 00:00:00",
+            "MODIFIED_ON": "2011-01-01 00:00:00",
             "CREATED_BY_USER": "",
             "MODIFIED_BY_USER": "",
             "UID": "0x31323600000000000000000000000000",
@@ -177,8 +177,8 @@
             "DATA_ADDRESS": "test_case"
         },
         {
-            "CREATED_ON": "0000-00-00 00:00:00",
-            "MODIFIED_ON": "0000-00-00 00:00:00",
+            "CREATED_ON": "2011-01-01 00:00:00",
+            "MODIFIED_ON": "2011-01-01 00:00:00",
             "CREATED_BY_USER": "",
             "MODIFIED_BY_USER": "",
             "UID": "0x31323700000000000000000000000000",
@@ -194,8 +194,8 @@
             "DATA_ADDRESS": "ticket"
         },
         {
-            "CREATED_ON": "0000-00-00 00:00:00",
-            "MODIFIED_ON": "0000-00-00 00:00:00",
+            "CREATED_ON": "2011-01-01 00:00:00",
+            "MODIFIED_ON": "2011-01-01 00:00:00",
             "CREATED_BY_USER": "",
             "MODIFIED_BY_USER": "",
             "UID": "0x31333400000000000000000000000000",
@@ -211,8 +211,8 @@
             "DATA_ADDRESS": "feature_kunde_mapping"
         },
         {
-            "CREATED_ON": "0000-00-00 00:00:00",
-            "MODIFIED_ON": "0000-00-00 00:00:00",
+            "CREATED_ON": "2011-01-01 00:00:00",
+            "MODIFIED_ON": "2011-01-01 00:00:00",
             "CREATED_BY_USER": "",
             "MODIFIED_BY_USER": "",
             "UID": "0x31333500000000000000000000000000",
