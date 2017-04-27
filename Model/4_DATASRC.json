@@ -51,6 +51,13 @@
             "attribute_alias": "DEFAULT_CONNECTION"
         },
         {
+            "expression": "DEFAULT_QUERY_BUILDER",
+            "name": "DEFAULT_QUERY_BUILDER",
+            "hidden": false,
+            "data_type": "Relation",
+            "attribute_alias": "DEFAULT_QUERY_BUILDER"
+        },
+        {
             "expression": "BASE_OBJECT",
             "name": "BASE_OBJECT",
             "hidden": false,
@@ -77,29 +84,22 @@
             "hidden": false,
             "data_type": "String",
             "attribute_alias": "ALIAS"
-        },
-        {
-            "expression": "QUERYBUILDER",
-            "name": "QUERYBUILDER",
-            "hidden": false,
-            "data_type": "Relation",
-            "attribute_alias": "QUERYBUILDER"
         }
     ],
     "rows": [
         {
-            "CREATED_ON": "2011-01-01 00:00:00",
+            "CREATED_ON": "0000-00-00 00:00:00",
             "MODIFIED_ON": "2017-04-18 16:50:29",
             "CREATED_BY_USER": "",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x32360000000000000000000000000000",
             "APP": "0x31370000000000000000000000000000",
             "DEFAULT_CONNECTION": "0x31320000000000000000000000000000",
+            "DEFAULT_QUERY_BUILDER": "exface\/SqlDataConnector\/QueryBuilders\/MySQL.php",
             "BASE_OBJECT": "0x31323300000000000000000000000000",
             "READONLY": "0",
             "LABEL": "ExFace TestMan",
-            "ALIAS": "EXF_TESTMAN",
-            "QUERYBUILDER": "exface\/SqlDataConnector\/QueryBuilders\/MySQL.php"
+            "ALIAS": "EXF_TESTMAN"
         }
     ],
     "totals_rows": [],
