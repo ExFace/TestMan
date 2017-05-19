@@ -1,7 +1,6 @@
 <?php namespace axenox\TestMan\Actions;
 
 use exface\Core\Actions\CreateData;
-use exface\Core\Exceptions\ActionRuntimeException;
 use exface\Core\Exceptions\Actions\ActionInputInvalidObjectError;
 
 /**
@@ -21,7 +20,7 @@ class CreateRedmineTicket extends CreateData {
 		$input = $this->get_input_data_sheet();
 		
 		// Check if the input is OK
-		if (strcasecmp($input->get_meta_object()->get_alias_with_namespace(), 'exface.TestMan.TICKET') !== 0){
+		if (strcasecmp($input->get_meta_object()->get_alias_with_namespace(), 'axenox.TestMan.TICKET') !== 0){
 			throw new ActionInputInvalidObjectError($this, 'Only TestMan tickets are accepted as input for "' . $this->get_alias_with_namespace() . '": "' . $input->get_meta_object()->get_alias_with_namespace() . '" given instead!', '6T5DMUS');
 		}
 		
@@ -71,24 +70,29 @@ TEXT;
 		}
 		
 		$this->get_workbench()->context()->get_scope_window()->get_context('Upload')->clear_uploads();
-		$result->data_create();
+		$new_rows = $result->data_create();
 		
-		// The following is a workaround for a strange bug, that returns an Error 500 upon creating a ticket instead of a ticket number.
-		// The idea is simply to fetch the most recent ticket of the current user.
-		// IDEA This workaround should be removed once the redmine bug is fixed
-		$check = $this->get_workbench()->data()->create_data_sheet($ticket_object);
-		$check->add_filter_from_string('AUTHOR', $ticket_object->get_data_connection()->get_user_id());
-		$check->get_columns()->add_from_expression($ticket_object->get_uid_alias());
-		$check->data_read();
-		$new_ticket_id = $check->get_cell_value($ticket_object->get_uid_alias(), 0);
+		if ($new_rows > 0){
+			// The following is a workaround for a strange bug, that returns an Error 500 upon creating a ticket instead of a ticket number.
+			// The idea is simply to fetch the most recent ticket of the current user.
+			// IDEA This workaround should be removed once the redmine bug is fixed
+			$check = $this->get_workbench()->data()->create_data_sheet($ticket_object);
+			$check->add_filter_from_string('AUTHOR', $ticket_object->get_data_connection()->get_user_id());
+			$check->get_columns()->add_from_expression($ticket_object->get_uid_alias());
+			$check->data_read();
+			$new_ticket_id = $check->get_cell_value($ticket_object->get_uid_alias(), 0);
+		} else {
+			$new_ticket_id = $result->get_uid_column()->get_cell_value(0);
+		}
 		
 		// Now save a reference for the newly created ticket for the test case
-		$ticket_ref = $this->get_workbench()->data()->create_data_sheet($this->get_workbench()->model()->get_object('EXFACE.TESTMAN.TICKET'));
+		$ticket_ref = $this->get_workbench()->data()->create_data_sheet($this->get_workbench()->model()->get_object('axenox.TestMan.TICKET'));
 		$ticket_ref->set_cell_value('TEST_CASE', 0, $input->get_cell_value('TEST_CASE', 0));
 		$ticket_ref->set_cell_value('REDMINE_TICKET', 0, $new_ticket_id);
 		$ticket_ref->data_create();
 		
 		$this->set_result_data_sheet($result);
+		$this->set_result('');
 		$this->set_result_message('New ticket <a target="_blank" href="' . $ticket_object->get_data_connection()->get_url() . "issues/" . $new_ticket_id . '">#' . $new_ticket_id . '</a> created!');
 		return;
 	}
