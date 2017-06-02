@@ -24,7 +24,7 @@ class CreateRedmineTicket extends CreateData
         $input = $this->getInputDataSheet();
         
         // Check if the input is OK
-        if ($input->getMetaObject()->is('axenox.TestMan.TICKET')) {
+        if (!$input->getMetaObject()->is('axenox.TestMan.TICKET')) {
             throw new ActionInputInvalidObjectError($this, 'Only TestMan tickets are accepted as input for "' . $this->getAliasWithNamespace() . '": "' . $input->getMetaObject()->getAliasWithNamespace() . '" given instead!', '6T5DMUS');
         }
         
