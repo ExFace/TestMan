@@ -127,9 +127,9 @@
         },
         {
             "CREATED_ON": "2007-01-01 00:00:00",
-            "MODIFIED_ON": "2007-01-01 00:00:00",
+            "MODIFIED_ON": "2017-06-02 14:19:53",
             "CREATED_BY_USER": "",
-            "MODIFIED_BY_USER": "",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x31323400000000000000000000000000",
             "DATA_SOURCE": "0x32360000000000000000000000000000",
             "long_description": "",
@@ -137,7 +137,7 @@
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": "{}",
-            "DEFAULT_EDITOR_UXON": "",
+            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Panel\",\"widgets\":[{\"attribute_alias\":\"PRODUKT\"},{\"attribute_alias\":\"SHORT_NAME\"},{\"attribute_alias\":\"NAME\",\"width\":2},{\"attribute_alias\":\"FK\",\"width\":2},{\"attribute_alias\":\"TK\",\"width\":2},{\"attribute_alias\":\"DFD\",\"width\":2},{\"attribute_alias\":\"TP\",\"width\":2},{\"attribute_alias\":\"HINWEISE\",\"width\":2,\"height\":7},{\"attribute_alias\":\"BEMERKUNGEN\",\"width\":2,\"height\":7}]}",
             "LABEL": "Modul",
             "ALIAS": "MODULE",
             "DATA_ADDRESS": "module"
