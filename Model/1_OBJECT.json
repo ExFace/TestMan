@@ -178,9 +178,9 @@
         },
         {
             "CREATED_ON": "2007-01-01 00:00:00",
-            "MODIFIED_ON": "2007-01-01 00:00:00",
+            "MODIFIED_ON": "2017-06-06 15:19:13",
             "CREATED_BY_USER": "",
-            "MODIFIED_BY_USER": "",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x31323700000000000000000000000000",
             "DATA_SOURCE": "0x32360000000000000000000000000000",
             "long_description": "",
@@ -188,7 +188,7 @@
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": "{}",
-            "DEFAULT_EDITOR_UXON": "",
+            "DEFAULT_EDITOR_UXON": "{}",
             "LABEL": "Ticket",
             "ALIAS": "TICKET",
             "DATA_ADDRESS": "ticket"
@@ -243,6 +243,23 @@
             "LABEL": "Produkt",
             "ALIAS": "PRODUKT",
             "DATA_ADDRESS": "produkt"
+        },
+        {
+            "CREATED_ON": "2017-06-06 15:17:13",
+            "MODIFIED_ON": "2007-01-01 00:00:00",
+            "CREATED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "UID": "0x11e74acb1db4b63db797e4b318306b9a",
+            "DATA_SOURCE": "0x32360000000000000000000000000000",
+            "long_description": null,
+            "APP": "0x31370000000000000000000000000000",
+            "SHORT_DESCRIPTION": "",
+            "PARENT_OBJECT": "0x31323700000000000000000000000000",
+            "DATA_ADDRESS_PROPS": "{}",
+            "DEFAULT_EDITOR_UXON": "{}",
+            "LABEL": "Ticket f\u00fcr RMS",
+            "ALIAS": "TICKET_RMS",
+            "DATA_ADDRESS": "ticket"
         }
     ],
     "totals_rows": [],
