@@ -89,8 +89,7 @@ class CreateRedmineTicket extends CreateData
 +*Testnotiz:*+
 *AID:* {$data->getCellValue('TEST_CASE__FEATURE__MODULE__SHORT_NAME', 0)} {$data->getCellValue('TEST_CASE__FEATURE__MODULE__NAME', 0)}
 *Dialog/Menü:* {$data->getCellValue('TEST_CASE__FEATURE__MENU', 0)}
-*Testsystem:* {$data->getCellValue('SYSTEM', 0)}alexa, Klient {$data->getCellValue('MANDANT', 0)}, getestet in Version:
-{$today} {$data->getCellValue('VERSION', 0)}
+*Testsystem:* {$data->getCellValue('SYSTEM', 0)}, Klient {$data->getCellValue('MANDANT', 0)}, getestet in Version: {$today} {$data->getCellValue('VERSION', 0)}
 *DB-Nutzer/Schema:* {$data->getCellValue('DBSCHEMA', 0)}
 
 +*Testablauf:*+
