@@ -161,9 +161,9 @@
         },
         {
             "CREATED_ON": "2007-01-01 00:00:00",
-            "MODIFIED_ON": "2007-01-01 00:00:00",
+            "MODIFIED_ON": "2017-07-10 07:09:26",
             "CREATED_BY_USER": "",
-            "MODIFIED_BY_USER": "",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x31323600000000000000000000000000",
             "DATA_SOURCE": "0x32360000000000000000000000000000",
             "long_description": "",
@@ -171,7 +171,7 @@
             "SHORT_DESCRIPTION": "Ein atomarer Testfall, der komplett getestet werden muss.",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": "{}",
-            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Container\",\"widgets\":[{\"attribute_alias\":\"NAME\",\"width\":2},{\"attribute_alias\":\"FEATURE\",\"width\":2},{\"attribute_alias\":\"DESCRIPTION\",\"width\":2,\"height\":15}]}",
+            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Container\",\"widgets\":[{\"attribute_alias\":\"NAME\",\"width\":2},{\"attribute_alias\":\"FEATURE\",\"width\":2},{\"attribute_alias\":\"DESCRIPTION\",\"width\":2,\"height\":15},{\"attribute_alias\":\"EFFORT_PLANNED\"}]}",
             "LABEL": "Testfall",
             "ALIAS": "TEST_CASE",
             "DATA_ADDRESS": "test_case"
@@ -212,7 +212,7 @@
         },
         {
             "CREATED_ON": "2007-01-01 00:00:00",
-            "MODIFIED_ON": "2017-06-02 14:11:28",
+            "MODIFIED_ON": "2017-07-10 07:24:38",
             "CREATED_BY_USER": "",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x31333500000000000000000000000000",
@@ -222,7 +222,7 @@
             "SHORT_DESCRIPTION": "Ergebnis einer konkreten Testdurchf\u00fchrung",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": "{}",
-            "DEFAULT_EDITOR_UXON": "{}",
+            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Form\",\"number_of_columns\":2,\"widgets\":[{\"attribute_alias\":\"TEST_CASE\"},{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTED_ON\"},{\"attribute_alias\":\"TESTER\"},{\"attribute_alias\":\"AUFWAND\"},{\"attribute_alias\":\"COMMENT\"},{\"attribute_alias\":\"TICKET\"},{\"attribute_alias\":\"TEST_DESCRIPTION\",\"width\":2,\"height\":15}]}",
             "LABEL": "Testlauf",
             "ALIAS": "TESTLAUF",
             "DATA_ADDRESS": "testlauf"
