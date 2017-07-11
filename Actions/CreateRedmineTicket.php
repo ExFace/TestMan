@@ -42,12 +42,12 @@ class CreateRedmineTicket extends CreateData
         // Now the specially computed attributes
         $result->setCellValue('DESCRIPTION', 0, $description);
         // $connection = $this->getWorkbench()->model()->getObject('REDMINE.UPLOAD')->getDataConnection()->getCurrentConnection();
-        foreach ($this->getWorkbench()->context()->getScopeWindow()->getContext('Upload')->getUploadedFilePaths() as $file) {
+        foreach ($this->getWorkbench()->context()->getScopeWindow()->getContext('exface.Core.UploadContext')->getUploadedFilePaths() as $file) {
             // $request = $connection->post('uploads.json', array('body' => fopen($file, 'r'))); // 500
             // $request = $connection->post('uploads.json', array('headers' => ['debug' => true, 'Content-Type' => 'application/octet-stream'], 'body' => fopen($file, 'r'))); // 500
         }
         
-        $this->getWorkbench()->context()->getScopeWindow()->getContext('Upload')->clearUploads();
+        $this->getWorkbench()->context()->getScopeWindow()->getContext('exface.Core.UploadContext')->clearUploads();
         $result->dataCreate();
         $new_ticket_id = $result->getUidColumn()->getCellValue(0);
         
