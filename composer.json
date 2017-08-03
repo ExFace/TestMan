@@ -20,12 +20,14 @@
         "app": {
             "app_uid": "0x31370000000000000000000000000000",
             "app_alias": "axenox.TestMan",
-            "model_md5": "72b9e0251df6435dd9aa78571732864b",
-            "model_timestamp": "2017-07-11 09:18:30"
+            "model_md5": "e7ac1eaee5082bd56eeda8f3697b1109",
+            "model_timestamp": "2017-08-03 09:09:55"
         }
     },
     "autoload": {
-        "psr-4": { "axenox\\TestMan\\": "" },
+        "psr-4": {
+            "axenox\\TestMan\\": ""
+        },
         "exclude-from-classmap": [
             "/Config/",
             "/Translations/",
