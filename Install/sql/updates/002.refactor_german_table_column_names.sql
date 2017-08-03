@@ -17,11 +17,11 @@ ALTER TABLE `module` CHANGE `produkt_id` `product_id` INT(11) NOT NULL;
 
 ALTER TABLE `partner` CHANGE `uid` `id` INT(11) NOT NULL;
 
-ALTER TABLE `test_case` CHANGE `effort_planned` `effort_planned` DECIMAL(6,2) NULL DEFAULT NULL
+ALTER TABLE `test_case` CHANGE `effort_planned` `effort_planned` DECIMAL(6,2) NULL DEFAULT NULL;
 
 RENAME TABLE `exf_testman`.`testlauf` TO `exf_testman`.`test_log`;
 ALTER TABLE `test_log` CHANGE `aufwand` `effort` FLOAT NULL DEFAULT NULL;
-ALTER TABLE `test_log` CHANGE `effort` `effort` DECIMAL(6,2) NULL DEFAULT NULL
+ALTER TABLE `test_log` CHANGE `effort` `effort` DECIMAL(6,2) NULL DEFAULT NULL;
 
 DROP table module_table;
 
