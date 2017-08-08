@@ -1,0 +1,1 @@
+ALTER TABLE `feature` ADD `devman_topic_id` INT(11) NULL AFTER `module_id`;
