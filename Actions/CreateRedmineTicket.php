@@ -58,7 +58,7 @@ class CreateRedmineTicket extends CreateData
         $ticket_ref->dataCreate();
         
         // Create a history-entry with a reference to the ticket
-        $history = DataSheetFactory::createFromObjectIdOrAlias($this->getWorkbench(), 'axenox.TestMan.TESTLAUF');
+        $history = DataSheetFactory::createFromObjectIdOrAlias($this->getWorkbench(), 'axenox.TestMan.TEST_LOG');
         $history->setCellValue('TEST_CASE', 0, $input->getCellValue('TEST_CASE', 0));
         $history->setCellValue('COMMENT', 0, $input->getCellValue('REDMINE_TICKET__SUBJECT', 0));
         $history->setCellValue('TICKET', 0, $ticket_ref->getCellValue('UID', 0));
