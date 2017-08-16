@@ -95,7 +95,7 @@
             "UID": "0x32330000000000000000000000000000",
             "APP": "0x31370000000000000000000000000000",
             "LABEL": "TestMan local",
-            "CONNECTOR": "exface\/SqlDataConnector\/DataConnectors\/MySQL.php",
+            "CONNECTOR": "exface\/Core\/DataConnectors\/MySqlConnector.php",
             "CONFIG": "{\"host\":\"localhost\",\"dbase\":\"exf_testman\",\"user\":\"root\",\"character_set\":\"utf8\",\"connection_method\":\"SET CHARACTER SET\",\"password\":\"\"}",
             "READONLY": "0",
             "ALIAS": "TESTMAN_DEV",
