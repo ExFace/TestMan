@@ -3,8 +3,9 @@ namespace axenox\TestMan;
 
 use exface\Core\Interfaces\InstallerInterface;
 use exface\SqlDataConnector\SqlSchemaInstaller;
+use exface\Core\CommonLogic\Model\App;
 
-class TestManApp extends \exface\Core\CommonLogic\AbstractApp
+class TestManApp extends App
 {
     public function getInstaller(InstallerInterface $injected_installer = null)
     {
