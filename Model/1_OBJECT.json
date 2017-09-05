@@ -161,7 +161,7 @@
         },
         {
             "CREATED_ON": "2007-01-01 00:00:00",
-            "MODIFIED_ON": "2017-08-02 19:40:20",
+            "MODIFIED_ON": "2017-09-05 09:42:01",
             "CREATED_BY_USER": "",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x31323600000000000000000000000000",
@@ -171,7 +171,7 @@
             "SHORT_DESCRIPTION": "Ein atomarer Testfall, der komplett getestet werden muss.",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": "{}",
-            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Tabs\",\"tabs\":[{\"caption\":\"Testfall\",\"widgets\":[{\"attribute_alias\":\"NAME\",\"width\":2},{\"attribute_alias\":\"FEATURE\",\"width\":2},{\"attribute_alias\":\"DESCRIPTION\",\"width\":2,\"height\":15},{\"attribute_alias\":\"EFFORT_PLANNED\"}]},{\"caption\":\"Historie\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.TestMan.TEST_LOG\",\"filters\":[{\"attribute_alias\":\"TEST_CASE\",\"widget_type\":\"InputHidden\"},{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTER\"}],\"columns\":[{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTED_ON\"},{\"attribute_alias\":\"TESTER__LABEL\"},{\"attribute_alias\":\"EFFORT\"},{\"attribute_alias\":\"COMMENT\"},{\"attribute_alias\":\"TICKET__LABEL\",\"caption\":\"Fehler-Ticket\"}],\"sorters\":[{\"attribute_alias\":\"TESTED_ON\",\"direction\":\"DESC\"}],\"buttons\":[{\"action_alias\":\"exface.Core.EditObjectDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.DeleteObject\"}]}]}]}",
+            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Tabs\",\"tabs\":[{\"caption\":\"Testfall\",\"widgets\":[{\"attribute_alias\":\"NAME\",\"width\":2},{\"attribute_alias\":\"FEATURE\",\"width\":2},{\"attribute_alias\":\"DESCRIPTION\",\"width\":2,\"height\":15},{\"attribute_alias\":\"EFFORT_PLANNED\"}]},{\"caption\":\"Historie\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.TestMan.TEST_LOG\",\"filters\":[{\"attribute_alias\":\"TEST_CASE\",\"widget_type\":\"InputHidden\"},{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTER\"}],\"columns\":[{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTED_ON\"},{\"attribute_alias\":\"TEST_OK_FLAG\"},{\"attribute_alias\":\"TESTED_VERSION\"},{\"attribute_alias\":\"TESTER__LABEL\"},{\"attribute_alias\":\"EFFORT\"},{\"attribute_alias\":\"COMMENT\"},{\"attribute_alias\":\"TICKET__LABEL\",\"caption\":\"Fehler-Ticket\"}],\"sorters\":[{\"attribute_alias\":\"TESTED_ON\",\"direction\":\"DESC\"}],\"buttons\":[{\"action_alias\":\"exface.Core.EditObjectDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.DeleteObject\"}]}]}]}",
             "LABEL": "Testfall",
             "ALIAS": "TEST_CASE",
             "DATA_ADDRESS": "test_case"
