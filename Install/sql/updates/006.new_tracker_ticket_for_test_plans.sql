@@ -1,0 +1,1 @@
+ALTER TABLE `test_plan` ADD `tracker_ticket_id` VARCHAR(10) NULL AFTER `release_no`;

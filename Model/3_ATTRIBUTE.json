@@ -2430,6 +2430,39 @@
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
             "DEFAULT_EDITOR_UXON": "{}"
+        },
+        {
+            "CREATED_ON": "2017-09-07 09:38:16",
+            "MODIFIED_ON": "2017-09-07 09:39:00",
+            "CREATED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "UID": "0x11e793b03846c620b6e3e4b318306b9a",
+            "SORTABLEFLAG": "1",
+            "FILTERABLEFLAG": "1",
+            "AGGREGATABLEFLAG": "1",
+            "DEFAULT_AGGREGATE_FUNCTION": "",
+            "VALUE_LIST_DELIMITER": ",",
+            "LABEL": "Ticket",
+            "ALIAS": "tracker_ticket",
+            "DATATYPE": "0x35000000000000000000000000000000",
+            "DATA_ADDRESS": "tracker_ticket_id",
+            "OBJECT": "0x11e7776090ebb852b751e4b318306b9a",
+            "FORMATTER": "",
+            "DISPLAYORDER": null,
+            "LABELFLAG": "0",
+            "UIDFLAG": "0",
+            "HIDDENFLAG": "0",
+            "EDITABLEFLAG": "1",
+            "REQUIREDFLAG": "0",
+            "RELATED_OBJ": "0x31313900000000000000000000000000",
+            "SORTERPOS": null,
+            "SORTERDIR": "",
+            "RELATED_OBJ_ATTR": "",
+            "SHORT_DESCRIPTION": "",
+            "DATA_ADDRESS_PROPS": "{}",
+            "DEFAULT_VALUE": "",
+            "FIXED_VALUE": "",
+            "DEFAULT_EDITOR_UXON": "{}"
         }
     ],
     "totals_rows": [],
@@ -2442,8 +2475,7 @@
                 "value": "0x31370000000000000000000000000000",
                 "object_alias": "exface.Core.ATTRIBUTE"
             }
-        ],
-        "nested_groups": []
+        ]
     },
     "rows_on_page": null,
     "row_offset": 0,

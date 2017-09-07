@@ -144,8 +144,7 @@
                 "value": "0x31370000000000000000000000000000",
                 "object_alias": "exface.Core.OBJECT_ACTION"
             }
-        ],
-        "nested_groups": []
+        ]
     },
     "rows_on_page": null,
     "row_offset": 0,
