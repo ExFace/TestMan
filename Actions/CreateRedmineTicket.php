@@ -64,6 +64,7 @@ class CreateRedmineTicket extends CreateData
         $history->setCellValue('TICKET', 0, $ticket_ref->getCellValue('UID', 0));
         $history->setCellValue('TESTED_INSTALLATION', 0, $input->getCellValue('SYSTEM', 0));
         $history->setCellValue('TEST_DESCRIPTION', 0, $input->getCellValue('TESTABLAUF', 0));
+        $history->setCellValue('TEST_PLAN', 0, $input->getCellValue('TEST_CASE__TEST_PLAN_CASES__TEST_PLAN', 0));
         $history->dataCreate();
         
         $this->setResultDataSheet($result);
