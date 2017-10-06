@@ -13,6 +13,11 @@ use exface\Core\Actions\GoToUrl;
  */
 class GoToTrackerTicket extends GoToUrl
 {
+    protected function init()
+    {
+        $this->setOpenInNewWindow(true);
+    }
+    
     public function getUrl()
     {
         return $this->getApp()->getConfig()->getOption('TRACKER.GOTO_TICKET_URL');
