@@ -1,0 +1,5 @@
+{
+	"ACTION.GOTOTRACKERTICKET.NAME": "Show ticket",
+	"ACTION.CREATETRACKERTICKET.NAME": "Create ticket",
+	"ACTION.CREATETRACKERTICKET.RESULT": "Ticket <a target=\"_blank\" href=\"%url%\">#%ticket_id%</a> created!"
+}

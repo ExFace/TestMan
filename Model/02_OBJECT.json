@@ -161,7 +161,7 @@
         },
         {
             "CREATED_ON": "2007-01-01 00:00:00",
-            "MODIFIED_ON": "2017-09-12 06:22:26",
+            "MODIFIED_ON": "2017-10-06 09:29:59",
             "CREATED_BY_USER": "",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x31323600000000000000000000000000",
@@ -171,7 +171,7 @@
             "SHORT_DESCRIPTION": "Ein atomarer Testfall, der komplett getestet werden muss.",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": "{}",
-            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Tabs\",\"tabs\":[{\"caption\":\"Testfall\",\"widgets\":[{\"attribute_alias\":\"NAME\",\"width\":2},{\"attribute_alias\":\"FEATURE\",\"width\":2},{\"attribute_alias\":\"DESCRIPTION\",\"width\":2,\"height\":15},{\"attribute_alias\":\"EFFORT_PLANNED\"}]},{\"caption\":\"Historie\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.TestMan.TEST_LOG\",\"filters\":[{\"attribute_alias\":\"TEST_CASE\",\"widget_type\":\"InputHidden\"},{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTER\"}],\"columns\":[{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTED_ON\"},{\"attribute_alias\":\"TEST_OK_FLAG\"},{\"attribute_alias\":\"TESTED_VERSION\"},{\"attribute_alias\":\"TESTER__LABEL\"},{\"attribute_alias\":\"EFFORT\"},{\"attribute_alias\":\"COMMENT\"},{\"attribute_alias\":\"TICKET__LABEL\",\"caption\":\"Fehler-Ticket\"},{\"attribute_alias\":\"TEST_PLAN__LABEL\"}],\"sorters\":[{\"attribute_alias\":\"TESTED_ON\",\"direction\":\"DESC\"}],\"buttons\":[{\"action_alias\":\"exface.Core.EditObjectDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.DeleteObject\"}]}]}]}",
+            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Tabs\",\"tabs\":[{\"caption\":\"Testfall\",\"widgets\":[{\"attribute_alias\":\"NAME\",\"width\":2},{\"attribute_alias\":\"FEATURE\",\"width\":2},{\"attribute_alias\":\"DESCRIPTION\",\"width\":2,\"height\":15},{\"attribute_alias\":\"EFFORT_PLANNED\"}]},{\"caption\":\"Historie\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.TestMan.TEST_LOG\",\"filters\":[{\"attribute_alias\":\"TEST_CASE\",\"widget_type\":\"InputHidden\"},{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTER\"}],\"columns\":[{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTED_ON\"},{\"attribute_alias\":\"TEST_OK_FLAG\"},{\"attribute_alias\":\"TESTED_VERSION\"},{\"attribute_alias\":\"TESTER__LABEL\"},{\"attribute_alias\":\"EFFORT\"},{\"attribute_alias\":\"TRACKER_TICKET\"},{\"attribute_alias\":\"TEST_PLAN__LABEL\"},{\"attribute_alias\":\"COMMENT\"}],\"sorters\":[{\"attribute_alias\":\"TESTED_ON\",\"direction\":\"DESC\"}],\"buttons\":[{\"action_alias\":\"exface.Core.EditObjectDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"},{\"action_alias\":\"axenox.TestMan.GoToTrackerTicket\",\"action_open_in_new_window\":true}]}]}]}",
             "LABEL": "Testfall",
             "ALIAS": "TEST_CASE",
             "DATA_ADDRESS": "test_case"
@@ -212,7 +212,7 @@
         },
         {
             "CREATED_ON": "2007-01-01 00:00:00",
-            "MODIFIED_ON": "2017-09-04 05:10:50",
+            "MODIFIED_ON": "2017-10-05 16:21:17",
             "CREATED_BY_USER": "",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x31333500000000000000000000000000",
@@ -222,7 +222,7 @@
             "SHORT_DESCRIPTION": "Ergebnis einer konkreten Testdurchf\u00fchrung",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": "{}",
-            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Form\",\"number_of_columns\":2,\"widgets\":[{\"attribute_alias\":\"TEST_CASE\",\"id\":\"test_case_selector\"},{\"attribute_alias\":\"TESTED_ON\",\"widget_type\":\"Input\"},{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTED_VERSION\"},{\"attribute_alias\":\"TEST_OK_FLAG\"},{\"attribute_alias\":\"TESTER\"},{\"attribute_alias\":\"EFFORT\"},{\"attribute_alias\":\"TEST_PLAN\",\"widget_type\":\"ComboTable\",\"filters\":[{\"attribute_alias\":\"TEST_PLAN_CASES__TEST_CASE\",\"value\":\"=test_case_selector!UID\"},{\"attribute_alias\":\"CLOSED_FLAG\",\"value\":0}]},{\"attribute_alias\":\"TICKET\"},{\"attribute_alias\":\"COMMENT\",\"widget_type\":\"Input\"},{\"attribute_alias\":\"TEST_DESCRIPTION\",\"width\":2,\"height\":15}]}",
+            "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Form\",\"number_of_columns\":2,\"widgets\":[{\"attribute_alias\":\"TEST_CASE\",\"id\":\"test_case_selector\"},{\"attribute_alias\":\"TESTED_ON\",\"widget_type\":\"Input\"},{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTED_VERSION\"},{\"attribute_alias\":\"TEST_OK_FLAG\"},{\"attribute_alias\":\"TESTER\"},{\"attribute_alias\":\"EFFORT\"},{\"attribute_alias\":\"TEST_PLAN\",\"widget_type\":\"ComboTable\",\"filters\":[{\"attribute_alias\":\"TEST_PLAN_CASES__TEST_CASE\",\"value\":\"=test_case_selector!UID\"},{\"attribute_alias\":\"CLOSED_FLAG\",\"value\":0}]},{\"attribute_alias\":\"TRACKER_TICKET\"},{\"attribute_alias\":\"COMMENT\",\"widget_type\":\"Input\"},{\"attribute_alias\":\"TEST_DESCRIPTION\",\"width\":2,\"height\":15}]}",
             "LABEL": "Testdurchf\u00fchrung",
             "ALIAS": "TEST_LOG",
             "DATA_ADDRESS": "test_log"

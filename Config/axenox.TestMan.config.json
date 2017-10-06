@@ -1,0 +1,4 @@
+{
+	"TRACKER.TICKET_OBJECT_ALIAS": "your-connector-vendor.your-connector-alias.ticket-obejct-alias",
+	"TRACKER.GOTO_TICKET_URL": "https://your.tracker.com/issues/[#TRACKER_TICKET#]"
+}

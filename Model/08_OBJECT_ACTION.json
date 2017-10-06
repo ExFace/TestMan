@@ -132,6 +132,22 @@
             "APP": "0x31370000000000000000000000000000",
             "USE_IN_OBJECT_BASKET_FLAG": "1",
             "LABEL": "Zu Testplan hinzuf\u00fcgen"
+        },
+        {
+            "CREATED_ON": "2017-10-06 09:26:09",
+            "MODIFIED_ON": "2017-10-06 09:33:03",
+            "CREATED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "UID": "0x11e7aa785e4eb36cbf380205857feb80",
+            "OBJECT": "0x31323600000000000000000000000000",
+            "ACTION_PROTOTYPE": "exface\/Core\/Actions\/ShowDialog.php",
+            "ALIAS": "ShowTestCaseLogDialog",
+            "NAME": "Historie",
+            "SHORT_DESCRIPTION": "\u00d6ffnet einen Dialog mit der Historie der Testdurchf\u00fchrung f\u00fcr den Testfall",
+            "CONFIG_UXON": "{\"widget\":{\"widget_type\":\"Dialog\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.TestMan.TEST_LOG\",\"filters\":[{\"attribute_alias\":\"TEST_CASE\",\"widget_type\":\"InputHidden\"},{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTER\"},{\"attribute_alias\":\"TESTED_ON\",\"comparator\":\">=\"},{\"attribute_alias\":\"TESTED_ON\",\"comparator\":\"<=\"},{\"attribute_alias\":\"TEST_PLAN\"}],\"columns\":[{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTED_ON\"},{\"attribute_alias\":\"TEST_OK_FLAG\"},{\"attribute_alias\":\"TESTED_VERSION\"},{\"attribute_alias\":\"TESTER__LABEL\"},{\"attribute_alias\":\"EFFORT\"},{\"attribute_alias\":\"TRACKER_TICKET\"},{\"attribute_alias\":\"TEST_PLAN__LABEL\"},{\"attribute_alias\":\"COMMENT\"}],\"sorters\":[{\"attribute_alias\":\"TESTED_ON\",\"direction\":\"DESC\"}],\"buttons\":[{\"action_alias\":\"exface.Core.EditObjectDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"},{\"action_alias\":\"axenox.TestMan.GoToTrackerTicket\",\"action_open_in_new_window\":true}]}]}}",
+            "APP": "0x31370000000000000000000000000000",
+            "USE_IN_OBJECT_BASKET_FLAG": "1",
+            "LABEL": "Historie"
         }
     ],
     "totals_rows": [],
