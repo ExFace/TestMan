@@ -2,102 +2,56 @@
     "object_alias": "exface.Core.OBJECT_ACTION",
     "columns": [
         {
-            "expression": "CREATED_ON",
             "name": "CREATED_ON",
-            "hidden": false,
-            "data_type": "exface.Core.Timestamp",
             "attribute_alias": "CREATED_ON"
         },
         {
-            "expression": "MODIFIED_ON",
             "name": "MODIFIED_ON",
-            "hidden": false,
-            "data_type": "exface.Core.Timestamp",
             "attribute_alias": "MODIFIED_ON"
         },
         {
-            "expression": "CREATED_BY_USER",
             "name": "CREATED_BY_USER",
-            "hidden": false,
-            "data_type": "exface.Core.Relation",
             "attribute_alias": "CREATED_BY_USER"
         },
         {
-            "expression": "MODIFIED_BY_USER",
             "name": "MODIFIED_BY_USER",
-            "hidden": false,
-            "data_type": "exface.Core.Relation",
             "attribute_alias": "MODIFIED_BY_USER"
         },
         {
-            "expression": "UID",
             "name": "UID",
-            "hidden": false,
-            "data_type": "exface.Core.Number",
             "attribute_alias": "UID"
         },
         {
-            "expression": "OBJECT",
             "name": "OBJECT",
-            "hidden": false,
-            "data_type": "exface.Core.Relation",
             "attribute_alias": "OBJECT"
         },
         {
-            "expression": "ACTION_PROTOTYPE",
             "name": "ACTION_PROTOTYPE",
-            "hidden": false,
-            "data_type": "exface.Core.Relation",
             "attribute_alias": "ACTION_PROTOTYPE"
         },
         {
-            "expression": "ALIAS",
             "name": "ALIAS",
-            "hidden": false,
-            "data_type": "exface.Core.String",
             "attribute_alias": "ALIAS"
         },
         {
-            "expression": "NAME",
             "name": "NAME",
-            "hidden": false,
-            "data_type": "exface.Core.String",
             "attribute_alias": "NAME"
         },
         {
-            "expression": "SHORT_DESCRIPTION",
             "name": "SHORT_DESCRIPTION",
-            "hidden": false,
-            "data_type": "exface.Core.Text",
             "attribute_alias": "SHORT_DESCRIPTION"
         },
         {
-            "expression": "CONFIG_UXON",
             "name": "CONFIG_UXON",
-            "hidden": false,
-            "data_type": "exface.Core.Json",
             "attribute_alias": "CONFIG_UXON"
         },
         {
-            "expression": "APP",
             "name": "APP",
-            "hidden": false,
-            "data_type": "exface.Core.Relation",
             "attribute_alias": "APP"
         },
         {
-            "expression": "USE_IN_OBJECT_BASKET_FLAG",
             "name": "USE_IN_OBJECT_BASKET_FLAG",
-            "hidden": false,
-            "data_type": "exface.Core.Boolean",
             "attribute_alias": "USE_IN_OBJECT_BASKET_FLAG"
-        },
-        {
-            "expression": "LABEL",
-            "name": "LABEL",
-            "hidden": false,
-            "data_type": "exface.Core.String",
-            "attribute_alias": "LABEL"
         }
     ],
     "rows": [
@@ -114,8 +68,7 @@
             "SHORT_DESCRIPTION": "\u00d6ffnet einen Dialog zum Hinzuf\u00fcgen von einem oder mehrerer Testf\u00e4lle zu einem Testszenario.",
             "CONFIG_UXON": "{\"input_rows_min\":1,\"icon_name\":\"plus-circle\",\"widget\":{\"widget_type\":\"Dialog\",\"object_alias\":\"axenox.TestMan.TEST_SCENARIO_CASES\",\"widgets\":[{\"attribute_alias\":\"TEST_SCENARIO\",\"width\":2},{\"attribute_alias\":\"TEST_CASE\",\"widget_type\":\"InputSelect\",\"options_object_alias\":\"axenox.TestMan.TEST_CASE\",\"multi_select\":true,\"height\":8,\"width\":2}],\"Buttons\":[{\"action_alias\":\"exface.Core.CreateData\",\"visibility\":\"promoted\",\"align\":\"opposite\"},{\"caption\":\"Neues Szenario\",\"action\":{\"alias\":\"exface.Core.CreateObjectDialog\",\"object_alias\":\"axenox.TestMan.TEST_SCENARIO\"},\"close_dialog_after_action_succeeds\":false}]}}",
             "APP": "0x31370000000000000000000000000000",
-            "USE_IN_OBJECT_BASKET_FLAG": "1",
-            "LABEL": "Zu Szenario hinzuf\u00fcgen"
+            "USE_IN_OBJECT_BASKET_FLAG": "1"
         },
         {
             "CREATED_ON": "2017-08-02 19:28:53",
@@ -130,8 +83,7 @@
             "SHORT_DESCRIPTION": "\u00d6ffnet einen Dialog zum Hinzuf\u00fcgen von einem oder mehrerer Testf\u00e4lle zu einem Testplan.",
             "CONFIG_UXON": "{\"input_rows_min\":1,\"icon_name\":\"plus-circle\",\"widget\":{\"widget_type\":\"Dialog\",\"object_alias\":\"axenox.TestMan.TEST_PLAN_CASES\",\"widgets\":[{\"attribute_alias\":\"TEST_PLAN\"},{\"attribute_alias\":\"PRIORITY\"},{\"attribute_alias\":\"TEST_CASE\",\"widget_type\":\"InputSelect\",\"options_object_alias\":\"axenox.TestMan.TEST_CASE\",\"multi_select\":true,\"height\":8,\"width\":2}],\"Buttons\":[{\"action_alias\":\"exface.Core.CreateData\",\"visibility\":\"promoted\",\"align\":\"opposite\"},{\"caption\":\"Neuer Testplan\",\"action\":{\"alias\":\"exface.Core.CreateObjectDialog\",\"object_alias\":\"axenox.TestMan.TEST_PLAN\"},\"close_dialog_after_action_succeeds\":false}]}}",
             "APP": "0x31370000000000000000000000000000",
-            "USE_IN_OBJECT_BASKET_FLAG": "1",
-            "LABEL": "Zu Testplan hinzuf\u00fcgen"
+            "USE_IN_OBJECT_BASKET_FLAG": "1"
         },
         {
             "CREATED_ON": "2017-10-06 09:26:09",
@@ -146,8 +98,7 @@
             "SHORT_DESCRIPTION": "\u00d6ffnet einen Dialog mit der Historie der Testdurchf\u00fchrung f\u00fcr den Testfall",
             "CONFIG_UXON": "{\"widget\":{\"widget_type\":\"Dialog\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.TestMan.TEST_LOG\",\"filters\":[{\"attribute_alias\":\"TEST_CASE\",\"widget_type\":\"InputHidden\"},{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTER\"},{\"attribute_alias\":\"TESTED_ON\",\"comparator\":\">=\"},{\"attribute_alias\":\"TESTED_ON\",\"comparator\":\"<=\"},{\"attribute_alias\":\"TEST_PLAN\"}],\"columns\":[{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTED_ON\"},{\"attribute_alias\":\"TEST_OK_FLAG\"},{\"attribute_alias\":\"TESTED_VERSION\"},{\"attribute_alias\":\"TESTER__LABEL\"},{\"attribute_alias\":\"EFFORT\"},{\"attribute_alias\":\"TRACKER_TICKET\"},{\"attribute_alias\":\"TEST_PLAN__LABEL\"},{\"attribute_alias\":\"COMMENT\"}],\"sorters\":[{\"attribute_alias\":\"TESTED_ON\",\"direction\":\"DESC\"}],\"buttons\":[{\"action_alias\":\"exface.Core.EditObjectDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"},{\"action_alias\":\"axenox.TestMan.GoToTrackerTicket\",\"action_open_in_new_window\":true}]}]}}",
             "APP": "0x31370000000000000000000000000000",
-            "USE_IN_OBJECT_BASKET_FLAG": "1",
-            "LABEL": "Historie"
+            "USE_IN_OBJECT_BASKET_FLAG": "1"
         }
     ],
     "totals_rows": [],
