@@ -20,8 +20,8 @@
         "app": {
             "app_uid": "0x31370000000000000000000000000000",
             "app_alias": "axenox.TestMan",
-            "model_md5": "ab09da13b2144154527731c57648db86",
-            "model_timestamp": "2017-10-21 06:12:32"
+            "model_md5": "24fb6a61905157a572d069b8f1641819",
+            "model_timestamp": "2018-02-04 07:13:19"
         }
     },
     "autoload": {
