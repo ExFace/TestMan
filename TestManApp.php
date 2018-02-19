@@ -11,7 +11,7 @@ class TestManApp extends App
     {
         $installer = parent::getInstaller($injected_installer);
         
-        $schema_installer = new SqlSchemaInstaller($this->getNameResolver());
+        $schema_installer = new SqlSchemaInstaller($this->getSelector());
         $schema_installer->setDataConnection($this->getWorkbench()->model()->getObject('axenox.TestMan.FEATURE')->getDataConnection());
         $installer->addInstaller($schema_installer);
         
