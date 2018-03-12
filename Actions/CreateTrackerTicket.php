@@ -7,7 +7,7 @@ use exface\Core\Factories\DataSheetFactory;
 use exface\Core\DataTypes\StringDataType;
 use exface\Core\Interfaces\Tasks\TaskInterface;
 use exface\Core\Interfaces\DataSources\DataTransactionInterface;
-use exface\Core\Interfaces\Tasks\TaskResultInterface;
+use exface\Core\Interfaces\Tasks\ResultInterface;
 
 /**
  * Creates a ticket in the issue tracker for a given test log entry.
@@ -28,7 +28,7 @@ class CreateTrackerTicket extends CreateData
         $this->setUndoable(false);
     }
 
-    protected function perform(TaskInterface $task, DataTransactionInterface $transaction) : TaskResultInterface
+    protected function perform(TaskInterface $task, DataTransactionInterface $transaction) : ResultInterface
     {
         $input = $this->getInputDataSheet($task);
         
