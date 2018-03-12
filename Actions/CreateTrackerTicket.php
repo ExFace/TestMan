@@ -5,6 +5,9 @@ use exface\Core\Actions\CreateData;
 use exface\Core\Exceptions\Actions\ActionInputInvalidObjectError;
 use exface\Core\Factories\DataSheetFactory;
 use exface\Core\DataTypes\StringDataType;
+use exface\Core\Interfaces\Tasks\TaskInterface;
+use exface\Core\Interfaces\DataSources\DataTransactionInterface;
+use exface\Core\Interfaces\Tasks\TaskResultInterface;
 
 /**
  * Creates a ticket in the issue tracker for a given test log entry.
@@ -25,9 +28,9 @@ class CreateTrackerTicket extends CreateData
         $this->setUndoable(false);
     }
 
-    protected function perform()
+    protected function perform(TaskInterface $task, DataTransactionInterface $transaction) : TaskResultInterface
     {
-        $input = $this->getInputDataSheet();
+        $input = $this->getInputDataSheet($task);
         
         // Check if the input is OK
         if (!$input->getMetaObject()->is('axenox.TestMan.TEST_LOG')) {
@@ -36,16 +39,16 @@ class CreateTrackerTicket extends CreateData
         
         $description = $this->buildTicketBody(null, $input);
         $ticket_object = $this->getWorkbench()->model()->getObject($this->getApp()->getConfig()->getOption('TRACKER.TICKET_OBJECT_ALIAS'));
-        $result = DataSheetFactory::createFromObject($ticket_object);
+        $result_sheet = DataSheetFactory::createFromObject($ticket_object);
         // First add all direct ticket attributes
         foreach ($input->getColumns() as $col) {
             if (StringDataType::startsWith($col->getName(), 'TRACKER_TICKET__')) {
-                $result->setCellValue(str_replace('TRACKER_TICKET__', '', $col->getName()), 0, $col->getCellValue(0));
+                $result_sheet->setCellValue(str_replace('TRACKER_TICKET__', '', $col->getName()), 0, $col->getCellValue(0));
             }
         }
         
         // Now the specially computed attributes
-        $result->setCellValue('DESCRIPTION', 0, $description);
+        $result_sheet->setCellValue('DESCRIPTION', 0, $description);
         // $connection = $this->getWorkbench()->model()->getObject('REDMINE.UPLOAD')->getDataConnection()->getCurrentConnection();
         /*
         foreach ($this->getWorkbench()->context()->getScopeWindow()->getContext('exface.Core.UploadContext')->getUploadedFilePaths() as $file) {
@@ -54,19 +57,19 @@ class CreateTrackerTicket extends CreateData
         }
         $this->getWorkbench()->context()->getScopeWindow()->getContext('exface.Core.UploadContext')->clearUploads();
         */
-        $result->dataCreate();
-        $new_ticket_id = $result->getUidColumn()->getCellValue(0);
+        $result_sheet->dataCreate();
+        $new_ticket_id = $result_sheet->getUidColumn()->getCellValue(0);
         
         // Insert a reference to the created ticket into the input sheet and perform @author aka
         // regular create operation on it. 
         // IMPORTANT: ignore related attributes since we have attributes of the tracker ticket
         // in the same sheet!
         $this->setIgnoreRelatedObjectsInInputData(true);
-        $this->setInputDataSheet($input->setCellValue('TRACKER_TICKET', 0, $new_ticket_id));
-        parent::perform();
+        $task->setInputData($input->setCellValue('TRACKER_TICKET', 0, $new_ticket_id));
+        $result = parent::perform($task, $transaction);
         
         // Replace the result message with a custom one
-        $this->setResultMessage($this->translate('RESULT', ['%url%' => $this->getApp()->getAction('GoToTrackerTicket')->buildUrlFromDataSheet($input), '%ticket_id%' => $new_ticket_id]));
+        $result->setMessage($this->translate('RESULT', ['%url%' => $this->getApp()->getAction('GoToTrackerTicket')->buildUrlFromDataSheet($input), '%ticket_id%' => $new_ticket_id]));
         return;
     }
     
