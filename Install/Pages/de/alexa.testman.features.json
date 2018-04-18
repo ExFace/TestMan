@@ -1,0 +1,119 @@
+{
+    "id": "0xe7852d90431111e891fe00a0c6000012",
+    "alias_with_namespace": "alexa.testman.features",
+    "menu_parent_page_alias": "axenox.testman.home",
+    "menu_index": "2",
+    "menu_visible": true,
+    "name": "Features",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "widget_type": "DataTable",
+        "object_alias": "axenox.TestMan.FEATURE",
+        "filters": [
+            {
+                "attribute_alias": "MODULE__PRODUCT"
+            },
+            {
+                "attribute_alias": "MODULE"
+            },
+            {
+                "attribute_alias": "NAME"
+            },
+            {
+                "attribute_alias": "TEST_CASE__NAME"
+            },
+            {
+                "attribute_alias": "FEATURE_CUSTOMERS__CUSTOMER"
+            },
+            {
+                "attribute_alias": "MENU"
+            },
+            {
+                "attribute_alias": "DEVMAN_TOPIC"
+            },
+            {
+                "attribute_alias": "DEVMAN_TOPIC__project_topics__project"
+            }
+        ],
+        "sorters": [
+            {
+                "attribute_alias": "MODULE__SHORT_NAME",
+                "direction": "ASC"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "MODULE__SHORT_NAME"
+            },
+            {
+                "attribute_alias": "MODULE__NAME"
+            },
+            {
+                "attribute_alias": "NAME"
+            },
+            {
+                "attribute_alias": "TEST_CASE__LABEL:COUNT",
+                "caption": "Testf\u00e4lle"
+            },
+            {
+                "attribute_alias": "FEATURE_CUSTOMERS__CUSTOMER:COUNT",
+                "caption": "Kunden"
+            },
+            {
+                "attribute_alias": "FEATURE_CUSTOMERS__PRIORITY:AVG"
+            },
+            {
+                "attribute_alias": "DEVMAN_TOPIC__LABEL"
+            },
+            {
+                "attribute_alias": "MENU"
+            }
+        ],
+        "row_details": {
+            "height": 6,
+            "widgets": [
+                {
+                    "widget_type": "DataTable",
+                    "object_alias": "TEST_CASE",
+                    "hide_header": true,
+                    "hide_footer": true,
+                    "columns": [
+                        {
+                            "attribute_alias": "NAME"
+                        },
+                        {
+                            "attribute_alias": "LAST_TEST_BY__LABEL"
+                        },
+                        {
+                            "attribute_alias": "LAST_TEST_TIME"
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "action_alias": "exface.Core.ShowObjectCreateDialog"
+                        },
+                        {
+                            "action_alias": "exface.Core.ShowObjectEditDialog"
+                        },
+                        {
+                            "action_alias": "exface.Core.ShowObjectCopyDialog"
+                        }
+                    ]
+                }
+            ]
+        },
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject"
+            }
+        ]
+    }
+}
