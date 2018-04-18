@@ -8,6 +8,7 @@ use exface\Core\DataTypes\StringDataType;
 use exface\Core\Interfaces\Tasks\TaskInterface;
 use exface\Core\Interfaces\DataSources\DataTransactionInterface;
 use exface\Core\Interfaces\Tasks\ResultInterface;
+use exface\Core\Factories\ActionFactory;
 
 /**
  * Creates a ticket in the issue tracker for a given test log entry.
@@ -69,8 +70,9 @@ class CreateTrackerTicket extends CreateData
         $result = parent::perform($task, $transaction);
         
         // Replace the result message with a custom one
-        $result->setMessage($this->translate('RESULT', ['%url%' => $this->getApp()->getAction('GoToTrackerTicket')->buildUrlFromDataSheet($input), '%ticket_id%' => $new_ticket_id]));
-        return;
+        $goToAction = ActionFactory::createFromString($this->getWorkbench(), 'axenox.TestMan.GoToTrackerTicket');
+        $result->setMessage($this->translate('RESULT', ['%url%' => $goToAction->buildUrlFromDataSheet($input), '%ticket_id%' => $new_ticket_id]));
+        return $result;
     }
     
     protected function buildTicketBody($template, $data){
