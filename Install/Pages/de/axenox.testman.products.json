@@ -1,0 +1,54 @@
+{
+    "id": "0xf831aec8ba2c11e7895fe4b318306b9a",
+    "alias_with_namespace": "axenox.testman.products",
+    "menu_parent_page_alias": "axenox.testman.configuration",
+    "menu_index": "0",
+    "menu_visible": true,
+    "name": "Produkte",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "widget_type": "DataTable",
+        "object_alias": "axenox.TestMan.PRODUCT",
+        "filters": [
+            {
+                "attribute_alias": "NAME"
+            }
+        ],
+        "sorters": [
+            {
+                "attribute_alias": "NAME",
+                "direction": "ASC"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "UID"
+            },
+            {
+                "attribute_alias": "NAME"
+            },
+            {
+                "attribute_alias": "MODULE__UID:COUNT",
+                "caption": "Module"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject"
+            },
+            {
+                "action_alias": "exface.Core.GoToPage",
+                "action_page_alias": 163,
+                "caption": "Module"
+            }
+        ]
+    }
+}

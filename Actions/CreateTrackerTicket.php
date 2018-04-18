@@ -91,7 +91,7 @@ class CreateTrackerTicket extends CreateData
         
         return <<<TEXT
 +*Testnotiz:*+
-*TestCase*: "{$data->getCellValue('TEST_CASE__FEATURE__MODULE__SHORT_NAME', 0)}.{$data->getCellValue('TEST_CASE', 0)}":http://sdrexf1.salt-solutions.de/exface/exface.testman.testfaelle-ui.html?filter_UID={$data->getCellValue('TEST_CASE', 0)}
+*TestCase*: "{$data->getCellValue('TEST_CASE__FEATURE__MODULE__SHORT_NAME', 0)}.{$data->getCellValue('TEST_CASE', 0)}":http://sdrexf1.salt-solutions.de/exface/alexa.testman.testfaelle-ui.html?filter_UID={$data->getCellValue('TEST_CASE', 0)}
 *AID:* {$data->getCellValue('TEST_CASE__FEATURE__MODULE__SHORT_NAME', 0)} {$data->getCellValue('TEST_CASE__FEATURE__MODULE__NAME', 0)}
 *Dialog/Menü:* {$data->getCellValue('TEST_CASE__FEATURE__MENU', 0)}
 *Testsystem:* {$data->getCellValue('TESTED_INSTALLATION', 0)}, Klient {$data->getCellValue('MANDANT', 0)}, getestet in Version: {$today} {$data->getCellValue('TESTED_VERSION', 0)}

@@ -1,0 +1,60 @@
+{
+    "id": "0xf8314081ba2c11e7895fe4b318306b9a",
+    "alias_with_namespace": "axenox.testman.module",
+    "menu_parent_page_alias": "axenox.testman.home",
+    "menu_index": "1",
+    "menu_visible": true,
+    "name": "Module",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "widget_type": "DataTable",
+        "object_alias": "axenox.TestMan.MODULE",
+        "filters": [
+            {
+                "attribute_alias": "PRODUCT"
+            },
+            {
+                "attribute_alias": "SHORT_NAME"
+            },
+            {
+                "attribute_alias": "NAME"
+            }
+        ],
+        "sorters": [
+            {
+                "attribute_alias": "SHORT_NAME",
+                "direction": "ASC"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "PRODUCT__LABEL"
+            },
+            {
+                "attribute_alias": "SHORT_NAME"
+            },
+            {
+                "attribute_alias": "NAME"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.Core.GoToPage",
+                "action_page_alias": "exface.testman.features",
+                "caption": "Features"
+            }
+        ]
+    }
+}

@@ -1,0 +1,123 @@
+{
+    "id": "0xf831417bba2c11e7895fe4b318306b9a",
+    "alias_with_namespace": "axenox.testman.test-cases",
+    "menu_parent_page_alias": "axenox.testman.home",
+    "menu_index": "2",
+    "menu_visible": true,
+    "name": "Testf\u00e4lle",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "widget_type": "DataTable",
+        "object_alias": "axenox.TestMan.TEST_CASE",
+        "id": "test_cases",
+        "multi_select": true,
+        "filters": [
+            {
+                "attribute_alias": "FEATURE__MODULE__PRODUCT"
+            },
+            {
+                "attribute_alias": "UID"
+            },
+            {
+                "attribute_alias": "FEATURE__MODULE"
+            },
+            {
+                "attribute_alias": "FEATURE"
+            },
+            {
+                "attribute_alias": "NAME"
+            },
+            {
+                "attribute_alias": "LAST_TEST_OK"
+            },
+            {
+                "attribute_alias": "TEST_SCENARIO_CASES__TEST_SCENARIO"
+            },
+            {
+                "attribute_alias": "TEST_PLAN_CASES__TEST_PLAN"
+            }
+        ],
+        "sorters": [
+            {
+                "attribute_alias": "FEATURE__MODULE__SHORT_NAME",
+                "direction": "ASC"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "FEATURE__MODULE__SHORT_NAME"
+            },
+            {
+                "attribute_alias": "FEATURE__MODULE__NAME",
+                "hidden": true
+            },
+            {
+                "attribute_alias": "UID"
+            },
+            {
+                "attribute_alias": "FEATURE__NAME"
+            },
+            {
+                "attribute_alias": "NAME"
+            },
+            {
+                "attribute_alias": "LAST_TEST_TIME"
+            },
+            {
+                "attribute_alias": "LAST_TEST_BY__LABEL",
+                "caption": "Letzter Tester"
+            },
+            {
+                "attribute_alias": "LAST_TEST_OK"
+            },
+            {
+                "attribute_alias": "TICKET__UID:COUNT",
+                "caption": "Tickets",
+                "footer": "SUM"
+            },
+            {
+                "attribute_alias": "TEST_LOG__EFFORT:AVG",
+                "footer": "SUM"
+            },
+            {
+                "attribute_alias": "TEST_SCENARIO_CASES__TEST_SCENARIO:COUNT",
+                "caption": "Szenarien"
+            },
+            {
+                "attribute_alias": "DESCRIPTION",
+                "hidden": true
+            },
+            {
+                "caption": "Identifikator",
+                "attribute_alias": "=Concatenate(FEATURE__MODULE__SHORT_NAME, '.', UID)",
+                "id": "ident"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog",
+                "caption": "Neu"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog",
+                "visibility": "optional"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            },
+            {
+                "action_alias": "axenox.TestMan.AddTestCasesToScenario"
+            },
+            {
+                "action_alias": "axenox.TestMan.AddTestCasesToTestPlan"
+            }
+        ]
+    }
+}

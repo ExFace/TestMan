@@ -1,0 +1,12 @@
+{
+    "id": "0xf8314b7fba2c11e7895fe4b318306b9a",
+    "alias_with_namespace": "axenox.testman.configuration",
+    "menu_parent_page_alias": "axenox.testman.home",
+    "menu_index": "10",
+    "menu_visible": true,
+    "name": "Konfiguration",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": ""
+}

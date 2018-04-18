@@ -1,0 +1,56 @@
+{
+    "id": "0xf83144f1ba2c11e7895fe4b318306b9a",
+    "alias_with_namespace": "axenox.testman.customers",
+    "menu_parent_page_alias": "axenox.testman.configuration",
+    "menu_index": "0",
+    "menu_visible": true,
+    "name": "Kunden",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "widget_type": "DataTable",
+        "object_alias": "axenox.CRM.CUSTOMER",
+        "filters": [
+            {
+                "attribute_alias": "KUERZEL"
+            },
+            {
+                "attribute_alias": "NAME"
+            }
+        ],
+        "sorters": [
+            {
+                "attribute_alias": "KUERZEL",
+                "direction": "ASC"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "KUERZEL"
+            },
+            {
+                "attribute_alias": "NAME"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog",
+                "caption": "Neu"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "caption": "Bearbeiten"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "caption": "L\u00f6schen"
+            },
+            {
+                "action_alias": "exface.Core.GoToPage",
+                "action_page_alias": 164,
+                "caption": "Features"
+            }
+        ]
+    }
+}

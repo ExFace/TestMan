@@ -2328,7 +2328,7 @@
         },
         {
             "CREATED_ON": "2017-08-08 13:06:04",
-            "MODIFIED_ON": "2017-08-08 13:09:29",
+            "MODIFIED_ON": "2018-04-18 14:03:35",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e77c3a2fb4ff578e6f0050568905af",
@@ -2340,8 +2340,8 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": null,
-            "LABEL": "DevMan topic",
+            "DEFAULT_EDITOR_UXON": "",
+            "LABEL": "DevMan Topic",
             "ALIAS": "DEVMAN_TOPIC",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "devman_topic_id",
@@ -2358,10 +2358,10 @@
             "SORTERDIR": "",
             "RELATED_OBJ_ATTR": "",
             "SHORT_DESCRIPTION": "",
-            "DATA_ADDRESS_PROPS": "",
+            "DATA_ADDRESS_PROPS": "{}",
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": null
+            "CUSTOM_DATA_TYPE": ""
         },
         {
             "CREATED_ON": "2017-08-31 10:52:09",
