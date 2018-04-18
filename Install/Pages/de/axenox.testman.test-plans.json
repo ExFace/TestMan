@@ -2,7 +2,7 @@
     "id": "0xf831b4e7ba2c11e7895fe4b318306b9a",
     "alias_with_namespace": "axenox.testman.test-plans",
     "menu_parent_page_alias": "axenox.testman.home",
-    "menu_index": "4",
+    "menu_index": "5",
     "menu_visible": true,
     "name": "Testpl\u00e4ne",
     "description": "",
@@ -26,11 +26,6 @@
             },
             {
                 "attribute_alias": "TEST_PLAN_CASES__TEST_CASE__FEATURE"
-            },
-            {
-                "attribute_alias": "TEST_LOG__TESTED_ON:MIN",
-                "caption": "Erster Test",
-                "widget_type": "InputDate"
             },
             {
                 "attribute_alias": "CLOSED_FLAG",
@@ -91,12 +86,14 @@
                 "footer": "SUM"
             },
             {
-                "attribute_alias": "TEST_LOG__TESTED_ON:MIN",
-                "caption": "Erster Test"
+                "attribute_alias": "=DATE(TEST_LOG__TESTED_ON:MIN)",
+                "caption": "Erster Test",
+                "align": "right"
             },
             {
-                "attribute_alias": "TEST_LOG__TESTED_ON:MAX",
-                "caption": "Letzter Test"
+                "attribute_alias": "=DATE(TEST_LOG__TESTED_ON:MAX)",
+                "caption": "Letzter Test",
+                "align": "right"
             },
             {
                 "attribute_alias": "CLOSED_FLAG"
@@ -200,7 +197,7 @@
                                     "actions": [
                                         {
                                             "alias": "axenox.RedmineConnector.CreateIssue",
-                                            "ignore_related_objects_in_input_data": true
+                                            "ignore_related_objects_in_input_data": false
                                         },
                                         {
                                             "alias": "exface.Core.UpdateData",
@@ -231,6 +228,9 @@
                         ]
                     }
                 }
+            },
+            {
+                "action_alias": "axenox.TestMan.GoToTrackerTicket"
             }
         ]
     }

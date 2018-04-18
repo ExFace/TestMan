@@ -1,0 +1,79 @@
+{
+    "id": "0x831b3520431611e8b1a600a0c6000012",
+    "alias_with_namespace": "axenox.testman.test-log",
+    "menu_parent_page_alias": "axenox.testman.home",
+    "menu_index": "9",
+    "menu_visible": true,
+    "name": "Test-Log",
+    "description": "",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "widget_type": "DataTable",
+        "object_alias": "axenox.TestMan.TEST_LOG",
+        "filters": [
+            {
+                "attribute_alias": "TEST_CASE__FEATURE"
+            },
+            {
+                "attribute_alias": "TEST_CASE"
+            },
+            {
+                "attribute_alias": "TESTED_INSTALLATION"
+            },
+            {
+                "attribute_alias": "TESTER"
+            }
+        ],
+        "columns": [
+            {
+                "attribute_alias": "TEST_CASE__LABEL"
+            },
+            {
+                "attribute_alias": "TESTED_INSTALLATION"
+            },
+            {
+                "attribute_alias": "TESTED_ON"
+            },
+            {
+                "attribute_alias": "TEST_OK_FLAG"
+            },
+            {
+                "attribute_alias": "TESTER__LABEL"
+            },
+            {
+                "attribute_alias": "TEST_PLAN__LABEL"
+            },
+            {
+                "attribute_alias": "EFFORT"
+            },
+            {
+                "attribute_alias": "COMMENT"
+            },
+            {
+                "attribute_alias": "TRACKER_TICKET"
+            }
+        ],
+        "sorters": [
+            {
+                "attribute_alias": "TESTED_ON",
+                "direction": "DESC"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject"
+            },
+            {
+                "action_alias": "axenox.TestMan.GoToTrackerTicket"
+            }
+        ]
+    }
+}

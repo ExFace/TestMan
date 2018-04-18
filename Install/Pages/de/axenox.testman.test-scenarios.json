@@ -2,7 +2,7 @@
     "id": "0xf831b457ba2c11e7895fe4b318306b9a",
     "alias_with_namespace": "axenox.testman.test-scenarios",
     "menu_parent_page_alias": "axenox.testman.home",
-    "menu_index": "3",
+    "menu_index": "4",
     "menu_visible": true,
     "name": "Testszenarien",
     "description": "",
@@ -50,18 +50,6 @@
             {
                 "attribute_alias": "TEST_SCENARIO_CASES__TEST_CASE__FEATURE__MODULE__SHORT_NAME:LIST_DISTINCT",
                 "align": "right"
-            }
-        ],
-        "buttons": [
-            {
-                "action_alias": "exface.Core.ShowObjectCreateDialog"
-            },
-            {
-                "action_alias": "exface.Core.ShowObjectEditDialog",
-                "bind_to_double_click": true
-            },
-            {
-                "action_alias": "exface.Core.DeleteObject"
             }
         ]
     }
