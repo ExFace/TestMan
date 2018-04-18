@@ -22,6 +22,7 @@ use exface\Core\Factories\ActionFactory;
  */
 class CreateTrackerTicket extends CreateData
 {
+    private $linkbackUrl = '';
 
     public function init()
     {
@@ -91,7 +92,7 @@ class CreateTrackerTicket extends CreateData
         
         return <<<TEXT
 +*Testnotiz:*+
-*TestCase*: "{$data->getCellValue('TEST_CASE__FEATURE__MODULE__SHORT_NAME', 0)}.{$data->getCellValue('TEST_CASE', 0)}":http://sdrexf1.salt-solutions.de/exface/alexa.testman.testfaelle-ui.html?filter_UID={$data->getCellValue('TEST_CASE', 0)}
+*TestCase*: "{$data->getCellValue('TEST_CASE__FEATURE__MODULE__SHORT_NAME', 0)}.{$data->getCellValue('TEST_CASE', 0)}":{$this->buildUrlLinkBack($data->getRow(0))}
 *AID:* {$data->getCellValue('TEST_CASE__FEATURE__MODULE__SHORT_NAME', 0)} {$data->getCellValue('TEST_CASE__FEATURE__MODULE__NAME', 0)}
 *Dialog/Menü:* {$data->getCellValue('TEST_CASE__FEATURE__MENU', 0)}
 *Testsystem:* {$data->getCellValue('TESTED_INSTALLATION', 0)}, Klient {$data->getCellValue('MANDANT', 0)}, getestet in Version: {$today} {$data->getCellValue('TESTED_VERSION', 0)}
@@ -112,5 +113,45 @@ class CreateTrackerTicket extends CreateData
 
 TEXT;
     }
+
+    
+
+    /**
+     * 
+     * @return string
+     */
+    public function getLinkbackUrl() : string
+    {
+        return $this->linkbackUrl;
+    }
+
+    /**
+     * Define a template for the linkback URL from the created ticket.
+     * 
+     * You can use any column name available in the input data as placeholder: e.g.
+     * http://www.me.com/exface.testman.test-cases.html?filter_UID=[#TEST_CASE#]
+     * 
+     * @uxon-property linkback_url
+     * @uxon-type string
+     * 
+     * @param string $url
+     * @return CreateTrackerTicket
+     */
+    public function setLinkbackUrl(string $url) : CreateTrackerTicket
+    {
+        $this->linkbackUrl = $url;
+        return $this;
+    }
+    
+    /**
+     * 
+     * @param array $dataRow
+     * @return string
+     */
+    protected function buildUrlLinkBack(array $dataRow) : string
+    {
+        return StringDataType::replacePlaceholders($this->getLinkbackUrl(), $dataRow);
+    }
+
 }
 ?>
