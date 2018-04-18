@@ -15,6 +15,7 @@ class GoToTrackerTicket extends GoToUrl
 {
     protected function init()
     {
+        parent::init();
         $this->setOpenInNewWindow(true);
     }
     
