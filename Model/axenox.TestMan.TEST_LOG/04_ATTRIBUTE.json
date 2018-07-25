@@ -256,9 +256,9 @@
         },
         {
             "CREATED_ON": "2007-01-01 00:00:00",
-            "MODIFIED_ON": "2016-03-02 00:00:00",
+            "MODIFIED_ON": "2018-06-20 12:13:01",
             "CREATED_BY_USER": "",
-            "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
+            "MODIFIED_BY_USER": "",
             "UID": "0x39353100000000000000000000000000",
             "SORTABLEFLAG": "1",
             "FILTERABLEFLAG": "1",
@@ -268,7 +268,7 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "",
+            "DEFAULT_EDITOR_UXON": "{\"required\":true}",
             "LABEL": "Tester",
             "ALIAS": "TESTER",
             "DATATYPE": "0x11e8091315d97da6b5b5e4b318306b9a",
@@ -280,7 +280,7 @@
             "UIDFLAG": "0",
             "HIDDENFLAG": "0",
             "EDITABLEFLAG": "1",
-            "REQUIREDFLAG": "1",
+            "REQUIREDFLAG": "0",
             "RELATED_OBJ": "0x31343400000000000000000000000000",
             "SORTERPOS": null,
             "SORTERDIR": "",
@@ -289,7 +289,7 @@
             "DATA_ADDRESS_PROPS": "{\"SQL_DATA_TYPE\":\"binary\"}",
             "DEFAULT_VALUE": "=USER('id')",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": ""
+            "CUSTOM_DATA_TYPE": "{}"
         },
         {
             "CREATED_ON": "2007-01-01 00:00:00",
