@@ -116,7 +116,7 @@
             },
             {
                 "action_alias": "exface.Core.GoToPage",
-                "action_page_alias": 166,
+                "action_page_alias": "axenox.testman.test-cases",
                 "caption": "Testf\u00e4lle"
             },
             {

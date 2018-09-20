@@ -51,6 +51,24 @@
                 "attribute_alias": "TEST_SCENARIO_CASES__TEST_CASE__FEATURE__MODULE__SHORT_NAME:LIST_DISTINCT",
                 "align": "right"
             }
+        ],
+        "buttons": [
+            {
+                "action_alias": "exface.Core.ShowObjectCreateDialog"
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            },
+            {
+                "action_alias": "exface.Core.GoToPage",
+                "action_page_alias": "axenox.testman.test-cases",
+                "caption": "Testf\u00e4lle"
+            }
         ]
     }
 }
