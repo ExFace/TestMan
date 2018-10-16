@@ -30,8 +30,12 @@
                 "attribute_alias": "NAME"
             },
             {
-                "attribute_alias": "MODULE__UID:COUNT",
+                "attribute_alias": "FEATURE__MODULE__UID:COUNT",
                 "caption": "Module"
+            },
+            {
+                "attribute_alias": "FEATURE__UID:COUNT",
+                "caption": "Features"
             }
         ],
         "buttons": [
@@ -39,15 +43,11 @@
                 "action_alias": "exface.Core.ShowObjectCreateDialog"
             },
             {
-                "action_alias": "exface.Core.ShowObjectEditDialog"
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
             },
             {
                 "action_alias": "exface.Core.DeleteObject"
-            },
-            {
-                "action_alias": "exface.Core.GoToPage",
-                "action_page_alias": 163,
-                "caption": "Module"
             }
         ]
     }

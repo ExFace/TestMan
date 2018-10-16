@@ -40,8 +40,8 @@
                 "caption": "Features"
             },
             {
-                "attribute_alias": "FEATURE__PRODUCT__UID:COUNT",
-                "caption": "Products"
+                "attribute_alias": "FEATURE__PRODUCT__NAME:LIST_DISTINCT",
+                "caption": "Produkte"
             }
         ],
         "buttons": [
