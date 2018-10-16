@@ -1,0 +1,243 @@
+{
+    "id": "0x19594f02d13a11e89a2c0205857feb80",
+    "alias_with_namespace": "axenox.testman.dashboard",
+    "menu_parent_page_alias": "axenox.testman.home",
+    "menu_index": "0",
+    "menu_visible": true,
+    "name": "Dashboard",
+    "description": "Aktueller Stand f\u00fcr alle Produkte",
+    "intro": "",
+    "replaces_page_alias": null,
+    "contents": {
+        "widget_type": "SplitHorizontal",
+        "object_alias": "axenox.TestMan.TEST_SCENARIO",
+        "panels": [
+            {
+                "width": "70%",
+                "caption": "Aktuell",
+                "widget_type": "SplitVertical",
+                "widgets": [
+                    {
+                        "widget_type": "DataTable",
+                        "caption": "Aktuelle Testpl\u00e4ne",
+                        "object_alias": "axenox.TestMan.TEST_PLAN",
+                        "id": "testplan_tabelle",
+                        "height": "50%",
+                        "hide_header": true,
+                        "filters": [
+                            {
+                                "attribute_alias": "CLOSED_FLAG",
+                                "value": 0,
+                                "widget_type": "InputHidden"
+                            }
+                        ],
+                        "sorters": [
+                            {
+                                "attribute_alias": "UID",
+                                "direction": "DESC"
+                            }
+                        ],
+                        "columns": [
+                            {
+                                "attribute_alias": "UID"
+                            },
+                            {
+                                "attribute_alias": "NAME"
+                            },
+                            {
+                                "attribute_alias": "RELEASE_NO"
+                            },
+                            {
+                                "attribute_alias": "TEST_PLAN_CASES__TEST_CASE:COUNT",
+                                "id": "testplan_gesamt",
+                                "caption": "Testf\u00e4lle",
+                                "footer": "SUM",
+                                "align": "right"
+                            },
+                            {
+                                "attribute_alias": "TEST_PLAN_CASES__LAST_TEST_OK:COUNT_IF(= null)",
+                                "id": "testplan_offen",
+                                "caption": "Offen",
+                                "footer": "SUM",
+                                "cell_widget": {
+                                    "widget_type": "Text",
+                                    "color": "yellow"
+                                }
+                            },
+                            {
+                                "attribute_alias": "TEST_PLAN_CASES__LAST_TEST_OK:COUNT_IF(= 0)",
+                                "id": "testplan_fehler",
+                                "caption": "Fehler",
+                                "footer": "SUM",
+                                "cell_widget": {
+                                    "widget_type": "Text",
+                                    "color": "red"
+                                }
+                            },
+                            {
+                                "attribute_alias": "TEST_PLAN_CASES__LAST_TEST_OK:COUNT_IF(= 1)",
+                                "id": "testplan_ok",
+                                "caption": "OK",
+                                "footer": "SUM",
+                                "cell_widget": {
+                                    "widget_type": "Text",
+                                    "color": "green"
+                                }
+                            },
+                            {
+                                "attribute_alias": "TEST_LOG__UID:COUNT",
+                                "caption": "Tests",
+                                "hint": "Anz. der Testdurchf\u00fchrungen f\u00fcr diesen Testplan",
+                                "footer": "SUM",
+                                "align": "right"
+                            },
+                            {
+                                "attribute_alias": "TEST_PLAN_CASES__TEST_CASE__EFFORT_PLANNED:SUM",
+                                "footer": "SUM",
+                                "align": "right"
+                            },
+                            {
+                                "attribute_alias": "TEST_LOG__EFFORT:SUM",
+                                "footer": "SUM"
+                            },
+                            {
+                                "attribute_alias": "=DATE(TEST_LOG__TESTED_ON:MIN)",
+                                "caption": "Erster Test",
+                                "align": "right"
+                            },
+                            {
+                                "attribute_alias": "=DATE(TEST_LOG__TESTED_ON:MAX)",
+                                "caption": "Letzter Test",
+                                "align": "right"
+                            },
+                            {
+                                "attribute_alias": "TRACKER_TICKET",
+                                "align": "right"
+                            }
+                        ]
+                    },
+                    {
+                        "widget_type": "DataTable",
+                        "caption": "Fehlgeschlagene Testf\u00e4lle",
+                        "hide_header": true,
+                        "object_alias": "axenox.TestMan.TEST_CASE",
+                        "filters": [
+                            {
+                                "attribute_alias": "LAST_TEST_OK",
+                                "value": 0,
+                                "comparator": "=="
+                            }
+                        ],
+                        "sorters": [
+                            {
+                                "attribute_alias": "LAST_TEST_TIME",
+                                "direction": "DESC"
+                            }
+                        ],
+                        "columns": [
+                            {
+                                "attribute_alias": "UID"
+                            },
+                            {
+                                "attribute_alias": "FEATURE__PRODUCT__LABEL",
+                                "width_max": "80px"
+                            },
+                            {
+                                "attribute_alias": "FEATURE__NAME",
+                                "width_max": "100px"
+                            },
+                            {
+                                "attribute_alias": "NAME",
+                                "width_max": "200px"
+                            },
+                            {
+                                "attribute_alias": "TEST_LOG__TRACKER_TICKET:MAX",
+                                "caption": "Letztes Ticket"
+                            },
+                            {
+                                "attribute_alias": "LAST_TEST_TIME"
+                            },
+                            {
+                                "attribute_alias": "LAST_TEST_BY__LABEL",
+                                "caption": "Letzter Tester"
+                            },
+                            {
+                                "attribute_alias": "EFFORT_PLANNED",
+                                "footer": "SUM"
+                            },
+                            {
+                                "attribute_alias": "TEST_LOG__EFFORT:AVG",
+                                "footer": "SUM"
+                            },
+                            {
+                                "attribute_alias": "TEST_PLAN_CASES__TEST_PLAN__RELEASE_NO:MAX"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "widget_type": "SplitVertical",
+                "caption": "Planung",
+                "panels": [
+                    {
+                        "caption": "Neue Testszenarien",
+                        "height": "50%",
+                        "widget_type": "DataTable",
+                        "object_alias": "axenox.TestMan.TEST_SCENARIO",
+                        "hide_header": true,
+                        "columns": [
+                            {
+                                "attribute_alias": "NAME"
+                            },
+                            {
+                                "attribute_alias": "TEST_SCENARIO_CUSTOMERS__CUSTOMER__NAME:LIST_DISTINCT",
+                                "caption": "Kunden"
+                            },
+                            {
+                                "attribute_alias": "TEST_SCENARIO_CASES__TEST_CASE__UID:COUNT",
+                                "caption": "Testf\u00e4lle"
+                            },
+                            {
+                                "attribute_alias": "CREATED_ON"
+                            }
+                        ],
+                        "sorters": [
+                            {
+                                "attribute_alias": "CREATED_ON",
+                                "direction": "DESC"
+                            }
+                        ]
+                    },
+                    {
+                        "caption": "Neue Features",
+                        "widget_type": "DataTable",
+                        "object_alias": "axenox.TestMan.FEATURE",
+                        "hide_header": true,
+                        "columns": [
+                            {
+                                "attribute_alias": "NAME"
+                            },
+                            {
+                                "attribute_alias": "TEST_CASE__UID:COUNT",
+                                "caption": "Testf\u00e4lle"
+                            },
+                            {
+                                "attribute_alias": "PRODUCT__LABEL"
+                            },
+                            {
+                                "attribute_alias": "CREATED_ON"
+                            }
+                        ],
+                        "sorters": [
+                            {
+                                "attribute_alias": "CREATED_ON",
+                                "direction": "DESC"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

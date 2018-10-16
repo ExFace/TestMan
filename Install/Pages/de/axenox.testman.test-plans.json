@@ -2,10 +2,10 @@
     "id": "0xf831b4e7ba2c11e7895fe4b318306b9a",
     "alias_with_namespace": "axenox.testman.test-plans",
     "menu_parent_page_alias": "axenox.testman.home",
-    "menu_index": "5",
+    "menu_index": "6",
     "menu_visible": true,
     "name": "Testpl\u00e4ne",
-    "description": "",
+    "description": "Testplanung",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {

@@ -2,10 +2,10 @@
     "id": "0xf8314081ba2c11e7895fe4b318306b9a",
     "alias_with_namespace": "axenox.testman.module",
     "menu_parent_page_alias": "axenox.testman.home",
-    "menu_index": "1",
+    "menu_index": "2",
     "menu_visible": true,
     "name": "Module",
-    "description": "",
+    "description": "Pflege der fachlichen Module",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {

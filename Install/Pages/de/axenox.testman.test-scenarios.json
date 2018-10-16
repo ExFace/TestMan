@@ -2,10 +2,10 @@
     "id": "0xf831b457ba2c11e7895fe4b318306b9a",
     "alias_with_namespace": "axenox.testman.test-scenarios",
     "menu_parent_page_alias": "axenox.testman.home",
-    "menu_index": "4",
+    "menu_index": "5",
     "menu_visible": true,
     "name": "Testszenarien",
-    "description": "",
+    "description": "Wiederverwendbare Gruppen von Testf\u00e4llen",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {
@@ -32,6 +32,9 @@
             },
             {
                 "attribute_alias": "TEST_SCENARIO_CUSTOMERS__CUSTOMER"
+            },
+            {
+                "attribute_alias": "TEST_SCENARIO_CUSTOMERS__PRIORITY"
             }
         ],
         "sorters": [
@@ -61,6 +64,10 @@
             },
             {
                 "attribute_alias": "TEST_SCENARIO_CUSTOMERS__CUSTOMER__SHORT_NAME:LIST_DISTINCT"
+            },
+            {
+                "attribute_alias": "TEST_SCENARIO_CUSTOMERS__PRIORITY:AVG",
+                "caption": "\u2300 Prio"
             },
             {
                 "attribute_alias": "TEST_SCENARIO_CASES__TEST_CASE__FEATURE__MODULE__SHORT_NAME:LIST_DISTINCT"
