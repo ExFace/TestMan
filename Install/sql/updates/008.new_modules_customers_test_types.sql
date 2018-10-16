@@ -1,5 +1,5 @@
 ALTER TABLE `feature` ADD `product_id` INT NOT NULL AFTER `name`, ADD INDEX `product_id` (`product_id`);
-UPDATE feature f SET f.product_id = (SELECT m.product_id FROM module m WHERE f.module_id = m.id)
+UPDATE feature f SET f.product_id = (SELECT m.product_id FROM module m WHERE f.module_id = m.id);
 ALTER TABLE `module` DROP `product_id`;
 DROP TABLE feature_customers;
 
