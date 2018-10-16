@@ -58,6 +58,14 @@
             "attribute_alias": "DEFAULT_EDITOR_UXON"
         },
         {
+            "name": "COPY_WITH_RELATED_OBJECT",
+            "attribute_alias": "COPY_WITH_RELATED_OBJECT"
+        },
+        {
+            "name": "DELETE_WITH_RELATED_OBJECT",
+            "attribute_alias": "DELETE_WITH_RELATED_OBJECT"
+        },
+        {
             "name": "LABEL",
             "attribute_alias": "LABEL"
         },
@@ -157,7 +165,9 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "",
+            "DEFAULT_EDITOR_UXON": "{}",
+            "COPY_WITH_RELATED_OBJECT": null,
+            "DELETE_WITH_RELATED_OBJECT": "1",
             "LABEL": "Testplan",
             "ALIAS": "TEST_PLAN",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
@@ -178,7 +188,7 @@
             "DATA_ADDRESS_PROPS": "",
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": ""
+            "CUSTOM_DATA_TYPE": "{}"
         },
         {
             "CREATED_ON": "2017-08-02 08:59:27",
@@ -194,7 +204,9 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "",
+            "DEFAULT_EDITOR_UXON": "{}",
+            "COPY_WITH_RELATED_OBJECT": null,
+            "DELETE_WITH_RELATED_OBJECT": "1",
             "LABEL": "Testfall",
             "ALIAS": "TEST_CASE",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
@@ -215,7 +227,7 @@
             "DATA_ADDRESS_PROPS": "",
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": ""
+            "CUSTOM_DATA_TYPE": "{}"
         },
         {
             "CREATED_ON": "2017-08-02 08:59:27",
@@ -232,6 +244,8 @@
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
             "DEFAULT_EDITOR_UXON": "{\"widget_type\": \"InputSelect\", \"selectable_options\": {\"1\": \"Hoch (1)\", \"2\": \"Mittel (2)\", \"3\": \"Niedrig (3)\"}}",
+            "COPY_WITH_RELATED_OBJECT": null,
+            "DELETE_WITH_RELATED_OBJECT": null,
             "LABEL": "Prio",
             "ALIAS": "PRIORITY",
             "DATATYPE": "0x31000000000000000000000000000000",
@@ -252,7 +266,7 @@
             "DATA_ADDRESS_PROPS": "",
             "DEFAULT_VALUE": "'2'",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": ""
+            "CUSTOM_DATA_TYPE": "{}"
         },
         {
             "CREATED_ON": "2017-08-31 11:24:38",
@@ -268,7 +282,9 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "",
+            "DEFAULT_EDITOR_UXON": "{}",
+            "COPY_WITH_RELATED_OBJECT": null,
+            "DELETE_WITH_RELATED_OBJECT": null,
             "LABEL": "Letzter Test OK",
             "ALIAS": "LAST_TEST_OK",
             "DATATYPE": "0x37000000000000000000000000000000",
@@ -289,7 +305,7 @@
             "DATA_ADDRESS_PROPS": "",
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": ""
+            "CUSTOM_DATA_TYPE": "{}"
         },
         {
             "CREATED_ON": "2017-08-31 16:06:44",
@@ -305,7 +321,9 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "1",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "",
+            "DEFAULT_EDITOR_UXON": "{}",
+            "COPY_WITH_RELATED_OBJECT": null,
+            "DELETE_WITH_RELATED_OBJECT": null,
             "LABEL": "Letzer Test",
             "ALIAS": "LAST_TEST_TIME",
             "DATATYPE": "0x33000000000000000000000000000000",
@@ -326,11 +344,11 @@
             "DATA_ADDRESS_PROPS": "{}",
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": ""
+            "CUSTOM_DATA_TYPE": "{}"
         },
         {
             "CREATED_ON": "2017-08-31 16:10:02",
-            "MODIFIED_ON": "2017-08-31 16:13:45",
+            "MODIFIED_ON": "2018-10-15 14:13:22",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11e78e66d6596137b6e3e4b318306b9a",
@@ -340,9 +358,11 @@
             "DEFAULT_AGGREGATE_FUNCTION": "",
             "VALUE_LIST_DELIMITER": ",",
             "READABLEFLAG": "1",
-            "WRITABLEFLAG": "1",
+            "WRITABLEFLAG": "0",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "",
+            "DEFAULT_EDITOR_UXON": "{}",
+            "COPY_WITH_RELATED_OBJECT": "0",
+            "DELETE_WITH_RELATED_OBJECT": "0",
             "LABEL": "Letzter Tester",
             "ALIAS": "LAST_TEST_BY",
             "DATATYPE": "0x11e8091315d97da6b5b5e4b318306b9a",
@@ -363,7 +383,7 @@
             "DATA_ADDRESS_PROPS": "{\"SQL_DATA_TYPE\":\"binary\"}",
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": ""
+            "CUSTOM_DATA_TYPE": "{}"
         },
         {
             "CREATED_ON": "2017-10-21 06:08:07",
@@ -379,7 +399,9 @@
             "READABLEFLAG": "1",
             "WRITABLEFLAG": "0",
             "SYSTEMFLAG": "0",
-            "DEFAULT_EDITOR_UXON": "",
+            "DEFAULT_EDITOR_UXON": "{}",
+            "COPY_WITH_RELATED_OBJECT": null,
+            "DELETE_WITH_RELATED_OBJECT": "0",
             "LABEL": "Testplan (aktiv)",
             "ALIAS": "TEST_PLAN_ACTIVE",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
@@ -400,7 +422,7 @@
             "DATA_ADDRESS_PROPS": "{}",
             "DEFAULT_VALUE": "",
             "FIXED_VALUE": "",
-            "CUSTOM_DATA_TYPE": ""
+            "CUSTOM_DATA_TYPE": "{}"
         }
     ],
     "totals_rows": [],

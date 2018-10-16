@@ -68,11 +68,11 @@
     ],
     "rows": [
         {
-            "CREATED_ON": "2007-01-01 00:00:00",
-            "MODIFIED_ON": "2017-08-02 08:44:33",
-            "CREATED_BY_USER": "",
+            "CREATED_ON": "2018-10-16 06:44:10",
+            "MODIFIED_ON": "2018-10-16 06:45:32",
+            "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
-            "UID": "0x31333400000000000000000000000000",
+            "UID": "0x11e8d10edd931407929b0205857feb80",
             "READABLE_FLAG": "1",
             "WRITABLE_FLAG": "1",
             "DATA_SOURCE": "0x32360000000000000000000000000000",
@@ -80,10 +80,10 @@
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": "{}",
-            "DEFAULT_EDITOR_UXON": "{}",
-            "LABEL": "Featurekunden",
-            "ALIAS": "FEATURE_CUSTOMERS",
-            "DATA_ADDRESS": "feature_customers"
+            "DEFAULT_EDITOR_UXON": "",
+            "LABEL": "Szenario-Kunden",
+            "ALIAS": "TEST_SCENARIO_CUSTOMERS",
+            "DATA_ADDRESS": "test_scenario_customers"
         }
     ],
     "totals_rows": [],

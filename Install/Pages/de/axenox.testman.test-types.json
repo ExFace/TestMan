@@ -1,36 +1,34 @@
 {
-    "id": "0xf83144f1ba2c11e7895fe4b318306b9a",
-    "alias_with_namespace": "axenox.testman.customers",
+    "id": "0xc6bab9f0d11311e8985b0205857feb80",
+    "alias_with_namespace": "axenox.testman.test-types",
     "menu_parent_page_alias": "axenox.testman.configuration",
     "menu_index": "0",
     "menu_visible": true,
-    "name": "Kunden",
+    "name": "Testtypen",
     "description": "",
     "intro": "",
     "replaces_page_alias": null,
     "contents": {
         "widget_type": "DataTable",
-        "object_alias": "axenox.CRM.CUSTOMER",
+        "object_alias": "axenox.TestMan.TEST_TYPE",
         "filters": [
-            {
-                "attribute_alias": "SHORT_NAME"
-            },
             {
                 "attribute_alias": "NAME"
             }
         ],
         "sorters": [
             {
-                "attribute_alias": "SHORT_NAME",
+                "attribute_alias": "NAME",
                 "direction": "ASC"
             }
         ],
         "columns": [
             {
-                "attribute_alias": "SHORT_NAME"
+                "attribute_alias": "NAME"
             },
             {
-                "attribute_alias": "NAME"
+                "attribute_alias": "TEST_SCENARIO__UID:COUNT",
+                "caption": "Scenarien"
             }
         ],
         "buttons": [
@@ -38,7 +36,8 @@
                 "action_alias": "exface.Core.ShowObjectCreateDialog"
             },
             {
-                "action_alias": "exface.Core.ShowObjectEditDialog"
+                "action_alias": "exface.Core.ShowObjectEditDialog",
+                "bind_to_double_click": true
             },
             {
                 "action_alias": "exface.Core.DeleteObject"

@@ -11,11 +11,10 @@
     "contents": {
         "widget_type": "DataTable",
         "object_alias": "axenox.TestMan.TEST_CASE",
-        "id": "test_cases",
         "multi_select": true,
         "filters": [
             {
-                "attribute_alias": "FEATURE__MODULE__PRODUCT"
+                "attribute_alias": "FEATURE__PRODUCT"
             },
             {
                 "attribute_alias": "UID"
@@ -36,13 +35,19 @@
                 "attribute_alias": "TEST_SCENARIO_CASES__TEST_SCENARIO"
             },
             {
+                "attribute_alias": "TEST_SCENARIO_CASES__TEST_SCENARIO__TEST_SCENARIO_CUSTOMERS__CUSTOMER"
+            },
+            {
+                "attribute_alias": "TEST_SCENARIO_CASES__TEST_SCENARIO__TEST_TYPE"
+            },
+            {
                 "attribute_alias": "TEST_PLAN_CASES__TEST_PLAN"
             }
         ],
         "sorters": [
             {
-                "attribute_alias": "FEATURE__MODULE__SHORT_NAME",
-                "direction": "ASC"
+                "attribute_alias": "CREATED_ON",
+                "direction": "DESC"
             }
         ],
         "columns": [

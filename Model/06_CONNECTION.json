@@ -53,14 +53,14 @@
     "rows": [
         {
             "CREATED_ON": "2011-01-01 00:00:00",
-            "MODIFIED_ON": "2017-04-19 00:00:00",
+            "MODIFIED_ON": "2018-10-16 06:42:07",
             "CREATED_BY_USER": "",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x32330000000000000000000000000000",
             "APP": "0x31370000000000000000000000000000",
             "LABEL": "TestMan local",
             "CONNECTOR": "exface\/Core\/DataConnectors\/MySqlConnector.php",
-            "CONFIG": "{\"host\":\"localhost\",\"dbase\":\"exf_testman\",\"user\":\"root\",\"character_set\":\"utf8\",\"connection_method\":\"SET CHARACTER SET\",\"password\":\"\"}",
+            "CONFIG": "{\"host\":\"localhost\",\"dbase\":\"exf_testman\",\"user\":\"root\",\"character_set\":\"utf8\",\"connection_method\":\"SET CHARACTER SET\",\"password\":\"\",\"relation_matcher\":\"\/(?<alias>(?<table>.*))_(?<key>id)\/i\"}",
             "READONLY": "0",
             "ALIAS": "TESTMAN_DEV",
             "FILTER_CONTEXT": ""

@@ -19,10 +19,19 @@
                 "attribute_alias": "NAME"
             },
             {
+                "attribute_alias": "TEST_TYPE"
+            },
+            {
+                "attribute_alias": "TEST_SCENARIO_CASES__TEST_CASE__FEATURE__PRODUCT"
+            },
+            {
                 "attribute_alias": "TEST_SCENARIO_CASES__TEST_CASE__FEATURE__MODULE"
             },
             {
                 "attribute_alias": "TEST_SCENARIO_CASES__TEST_CASE__FEATURE"
+            },
+            {
+                "attribute_alias": "TEST_SCENARIO_CUSTOMERS__CUSTOMER"
             }
         ],
         "sorters": [
@@ -39,6 +48,9 @@
                 "attribute_alias": "NAME"
             },
             {
+                "attribute_alias": "TEST_TYPE__NAME"
+            },
+            {
                 "attribute_alias": "TEST_SCENARIO_CASES__TEST_CASE:COUNT",
                 "align": "right"
             },
@@ -48,8 +60,10 @@
                 "align": "right"
             },
             {
-                "attribute_alias": "TEST_SCENARIO_CASES__TEST_CASE__FEATURE__MODULE__SHORT_NAME:LIST_DISTINCT",
-                "align": "right"
+                "attribute_alias": "TEST_SCENARIO_CUSTOMERS__CUSTOMER__SHORT_NAME:LIST_DISTINCT"
+            },
+            {
+                "attribute_alias": "TEST_SCENARIO_CASES__TEST_CASE__FEATURE__MODULE__SHORT_NAME:LIST_DISTINCT"
             }
         ],
         "buttons": [

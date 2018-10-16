@@ -13,7 +13,7 @@
         "object_alias": "axenox.TestMan.MODULE",
         "filters": [
             {
-                "attribute_alias": "PRODUCT"
+                "attribute_alias": "FEATURE__PRODUCT"
             },
             {
                 "attribute_alias": "SHORT_NAME"
@@ -30,13 +30,18 @@
         ],
         "columns": [
             {
-                "attribute_alias": "PRODUCT__LABEL"
-            },
-            {
                 "attribute_alias": "SHORT_NAME"
             },
             {
                 "attribute_alias": "NAME"
+            },
+            {
+                "attribute_alias": "FEATURE__UID:COUNT",
+                "caption": "Features"
+            },
+            {
+                "attribute_alias": "FEATURE__PRODUCT__UID:COUNT",
+                "caption": "Products"
             }
         ],
         "buttons": [

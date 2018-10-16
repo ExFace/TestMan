@@ -13,7 +13,7 @@
         "object_alias": "axenox.TestMan.FEATURE",
         "filters": [
             {
-                "attribute_alias": "MODULE__PRODUCT"
+                "attribute_alias": "PRODUCT"
             },
             {
                 "attribute_alias": "MODULE"
@@ -23,9 +23,6 @@
             },
             {
                 "attribute_alias": "TEST_CASE__NAME"
-            },
-            {
-                "attribute_alias": "FEATURE_CUSTOMERS__CUSTOMER"
             },
             {
                 "attribute_alias": "MENU"
@@ -56,13 +53,6 @@
             {
                 "attribute_alias": "TEST_CASE__LABEL:COUNT",
                 "caption": "Testf\u00e4lle"
-            },
-            {
-                "attribute_alias": "FEATURE_CUSTOMERS__CUSTOMER:COUNT",
-                "caption": "Kunden"
-            },
-            {
-                "attribute_alias": "FEATURE_CUSTOMERS__PRIORITY:AVG"
             },
             {
                 "attribute_alias": "DEVMAN_TOPIC__LABEL"
