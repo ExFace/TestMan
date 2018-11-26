@@ -30,6 +30,14 @@
             "attribute_alias": "WRITABLE_FLAG"
         },
         {
+            "name": "COMMENTS",
+            "attribute_alias": "COMMENTS"
+        },
+        {
+            "name": "DOCS",
+            "attribute_alias": "DOCS"
+        },
+        {
             "name": "DATA_SOURCE",
             "attribute_alias": "DATA_SOURCE"
         },
@@ -75,11 +83,13 @@
             "UID": "0x31333500000000000000000000000000",
             "READABLE_FLAG": "1",
             "WRITABLE_FLAG": "1",
+            "COMMENTS": null,
+            "DOCS": null,
             "DATA_SOURCE": "0x32360000000000000000000000000000",
             "APP": "0x31370000000000000000000000000000",
             "SHORT_DESCRIPTION": "Ergebnis einer konkreten Testdurchf\u00fchrung",
             "PARENT_OBJECT": "",
-            "DATA_ADDRESS_PROPS": "{}",
+            "DATA_ADDRESS_PROPS": null,
             "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Form\",\"number_of_columns\":2,\"widgets\":[{\"attribute_alias\":\"TEST_CASE\",\"id\":\"test_case_selector\"},{\"attribute_alias\":\"TESTED_ON\",\"widget_type\":\"Input\"},{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTED_VERSION\"},{\"attribute_alias\":\"TEST_OK_FLAG\"},{\"attribute_alias\":\"TESTER\"},{\"attribute_alias\":\"EFFORT\"},{\"attribute_alias\":\"TEST_PLAN\",\"widget_type\":\"InputComboTable\",\"filters\":[{\"attribute_alias\":\"TEST_PLAN_CASES__TEST_CASE\",\"value\":\"=test_case_selector!UID\"},{\"attribute_alias\":\"CLOSED_FLAG\",\"value\":0}]},{\"attribute_alias\":\"TRACKER_TICKET\"},{\"attribute_alias\":\"COMMENT\",\"widget_type\":\"Input\"},{\"attribute_alias\":\"TEST_DESCRIPTION\",\"width\":2,\"height\":15}]}",
             "LABEL": "Testdurchf\u00fchrung",
             "ALIAS": "TEST_LOG",
@@ -98,8 +108,8 @@
             }
         ]
     },
-    "rows_on_page": null,
-    "row_offset": 0,
+    "rows_limit": null,
+    "rows_offset": 0,
     "sorters": [
         {
             "attribute_alias": "CREATED_ON",
