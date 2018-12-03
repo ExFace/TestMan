@@ -73,7 +73,7 @@
             "CONFIG_UXON": "{\"input_rows_min\":1,\"icon\":\"plus-circle\",\"widget\":{\"widget_type\":\"Dialog\",\"object_alias\":\"axenox.TestMan.TEST_SCENARIO_CASES\",\"widgets\":[{\"attribute_alias\":\"TEST_SCENARIO\",\"width\":2},{\"attribute_alias\":\"TEST_CASE\",\"widget_type\":\"InputSelect\",\"options_object_alias\":\"axenox.TestMan.TEST_CASE\",\"multi_select\":true,\"height\":8,\"width\":2}],\"Buttons\":[{\"action_alias\":\"exface.Core.CreateData\",\"visibility\":\"promoted\",\"align\":\"opposite\"},{\"caption\":\"Neues Szenario\",\"action\":{\"alias\":\"exface.Core.ShowObjectCreateDialog\",\"object_alias\":\"axenox.TestMan.TEST_SCENARIO\"},\"close_dialog_after_action_succeeds\":false}]}}",
             "APP": "0x31370000000000000000000000000000",
             "USE_IN_OBJECT_BASKET_FLAG": "1",
-            "DOCS": null
+            "DOCS": ""
         },
         {
             "CREATED_ON": "2017-08-02 19:28:53",
@@ -89,7 +89,7 @@
             "CONFIG_UXON": "{\"input_rows_min\":1,\"icon\":\"plus-circle\",\"widget\":{\"widget_type\":\"Dialog\",\"object_alias\":\"axenox.TestMan.TEST_PLAN_CASES\",\"widgets\":[{\"attribute_alias\":\"TEST_PLAN\"},{\"attribute_alias\":\"PRIORITY\"},{\"attribute_alias\":\"TEST_CASE\",\"widget_type\":\"InputSelect\",\"options_object_alias\":\"axenox.TestMan.TEST_CASE\",\"multi_select\":true,\"height\":8,\"width\":2}],\"Buttons\":[{\"action_alias\":\"exface.Core.CreateData\",\"visibility\":\"promoted\",\"align\":\"opposite\"},{\"caption\":\"Neuer Testplan\",\"action\":{\"alias\":\"exface.Core.ShowObjectCreateDialog\",\"object_alias\":\"axenox.TestMan.TEST_PLAN\"},\"close_dialog_after_action_succeeds\":false}]}}",
             "APP": "0x31370000000000000000000000000000",
             "USE_IN_OBJECT_BASKET_FLAG": "1",
-            "DOCS": null
+            "DOCS": ""
         },
         {
             "CREATED_ON": "2017-10-06 09:26:09",
@@ -105,7 +105,7 @@
             "CONFIG_UXON": "{\"widget\":{\"widget_type\":\"Dialog\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.TestMan.TEST_LOG\",\"filters\":[{\"attribute_alias\":\"TEST_CASE\",\"widget_type\":\"InputHidden\"},{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTER\"},{\"attribute_alias\":\"TESTED_ON\",\"comparator\":\">=\"},{\"attribute_alias\":\"TESTED_ON\",\"comparator\":\"<=\"},{\"attribute_alias\":\"TEST_PLAN\"}],\"columns\":[{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTED_ON\"},{\"attribute_alias\":\"TEST_OK_FLAG\"},{\"attribute_alias\":\"TESTED_VERSION\"},{\"attribute_alias\":\"TESTER__LABEL\"},{\"attribute_alias\":\"EFFORT\"},{\"attribute_alias\":\"TRACKER_TICKET\"},{\"attribute_alias\":\"TEST_PLAN__LABEL\"},{\"attribute_alias\":\"COMMENT\"}],\"sorters\":[{\"attribute_alias\":\"TESTED_ON\",\"direction\":\"DESC\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectEditDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.DeleteObject\",\"visibility\":\"optional\"},{\"action_alias\":\"axenox.TestMan.GoToTrackerTicket\",\"action_open_in_new_window\":true}]}]}}",
             "APP": "0x31370000000000000000000000000000",
             "USE_IN_OBJECT_BASKET_FLAG": "1",
-            "DOCS": null
+            "DOCS": ""
         }
     ],
     "totals_rows": [],
