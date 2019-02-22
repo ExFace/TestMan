@@ -28,16 +28,12 @@ class CreateTrackerTicket extends CreateData
     {
         parent::init();
         $this->setUndoable(false);
+        $this->setInputObjectAlias('axenox.TestMan.TEST_LOG');
     }
 
     protected function perform(TaskInterface $task, DataTransactionInterface $transaction) : ResultInterface
     {
         $input = $this->getInputDataSheet($task);
-        
-        // Check if the input is OK
-        if (!$input->getMetaObject()->is('axenox.TestMan.TEST_LOG')) {
-            throw new ActionInputInvalidObjectError($this, 'Only TestMan TEST_LOG entries are accepted as input for "' . $this->getAliasWithNamespace() . '": "' . $input->getMetaObject()->getAliasWithNamespace() . '" given instead!', '6T5DMUS');
-        }
         
         $description = $this->buildTicketBody(null, $input);
         $ticket_object = $this->getWorkbench()->model()->getObject($this->getApp()->getConfig()->getOption('TRACKER.TICKET_OBJECT_ALIAS'));
