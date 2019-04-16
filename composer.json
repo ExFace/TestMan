@@ -14,7 +14,7 @@
         "issues": "https://github.com/axenox/TestMan/issues"
     },
     "require": {
-        "exface/core": "^0.1"
+        "exface/core": "~0.1"
     },
     "extra": {
         "app": {
