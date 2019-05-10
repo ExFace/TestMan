@@ -38,6 +38,14 @@
             "attribute_alias": "DOCS"
         },
         {
+            "name": "NAME",
+            "attribute_alias": "NAME"
+        },
+        {
+            "name": "INHERIT_DATA_SOURCE_BASE_OBJECT",
+            "attribute_alias": "INHERIT_DATA_SOURCE_BASE_OBJECT"
+        },
+        {
             "name": "DATA_SOURCE",
             "attribute_alias": "DATA_SOURCE"
         },
@@ -62,10 +70,6 @@
             "attribute_alias": "DEFAULT_EDITOR_UXON"
         },
         {
-            "name": "LABEL",
-            "attribute_alias": "LABEL"
-        },
-        {
             "name": "ALIAS",
             "attribute_alias": "ALIAS"
         },
@@ -85,13 +89,14 @@
             "WRITABLE_FLAG": "1",
             "COMMENTS": "",
             "DOCS": "",
+            "NAME": "Testplan (aktiv)",
+            "INHERIT_DATA_SOURCE_BASE_OBJECT": "1",
             "DATA_SOURCE": "0x32360000000000000000000000000000",
             "APP": "0x31370000000000000000000000000000",
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": "0x11e7776090ebb852b751e4b318306b9a",
             "DATA_ADDRESS_PROPS": "{\"SQL_SELECT_WHERE\":\"[#~alias#].closed_flag = 0\"}",
             "DEFAULT_EDITOR_UXON": "{\"widget_type\":\"Tabs\",\"tabs\":[{\"caption\":\"Testplan\",\"widgets\":[{\"attribute_alias\":\"NAME\",\"width\":2},{\"attribute_alias\":\"RELEASE_NO\"},{\"attribute_alias\":\"CLOSED_FLAG\"},{\"attribute_alias\":\"DESCRIPTION\",\"height\":14,\"width\":2},{\"attribute_alias\":\"TRACKER_TICKET\"}]},{\"caption\":\"Testf\u00e4lle\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.TestMan.TEST_PLAN_CASES\",\"multi_select\":true,\"filters\":[{\"attribute_alias\":\"TEST_PLAN\",\"widget_type\":\"InputHidden\"},{\"attribute_alias\":\"TEST_CASE__UID\"},{\"attribute_alias\":\"TEST_CASE__FEATURE__MODULE\"},{\"attribute_alias\":\"TEST_CASE__FEATURE\"},{\"attribute_alias\":\"TEST_CASE__NAME\"},{\"attribute_alias\":\"LAST_TEST_OK\",\"widget_type\":\"InputSelect\",\"multi_select\":true}],\"sorters\":[{\"attribute_alias\":\"PRIORITY\",\"direction\":\"DESC\"},{\"attribute_alias\":\"TEST_CASE__FEATURE__MODULE__SHORT_NAME\",\"direction\":\"ASC\"}],\"columns\":[{\"attribute_alias\":\"TEST_CASE__FEATURE__MODULE__SHORT_NAME\"},{\"attribute_alias\":\"TEST_CASE__UID\"},{\"attribute_alias\":\"PRIORITY\"},{\"attribute_alias\":\"TEST_CASE__NAME\"},{\"attribute_alias\":\"LAST_TEST_OK\"},{\"attribute_alias\":\"LAST_TEST_TIME\"},{\"attribute_alias\":\"LAST_TEST_BY__LABEL\",\"caption\":\"Letzter Tester\"},{\"attribute_alias\":\"TEST_CASE__EFFORT_PLANNED\",\"footer\":\"SUM\"},{\"attribute_alias\":\"TEST_CASE__FEATURE__NAME\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectCreateDialog\",\"caption\":\"Testfall hinzuf\u00fcgen\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\",\"bind_to_double_click\":true,\"caption\":\"Prio \u00e4ndern\"},{\"action_alias\":\"exface.Core.ShowObjectEditDialog\",\"action_object_alias\":\"axenox.TestMan.TEST_CASE\",\"caption\":\"Testfall bearbeiten\"},{\"action_alias\":\"exface.Core.DeleteObject\"}]}]},{\"caption\":\"Testdurchf\u00fchrung\",\"widgets\":[{\"widget_type\":\"DataTable\",\"object_alias\":\"axenox.TestMan.TEST_LOG\",\"filters\":[{\"attribute_alias\":\"TEST_PLAN\",\"widget_type\":\"InputHidden\"},{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTER\"},{\"attribute_alias\":\"TEST_CASE\"}],\"columns\":[{\"attribute_alias\":\"TEST_CASE__FEATURE__MODULE__SHORT_NAME\"},{\"attribute_alias\":\"TEST_CASE__UID\"},{\"attribute_alias\":\"TEST_CASE__NAME\"},{\"attribute_alias\":\"TESTED_INSTALLATION\"},{\"attribute_alias\":\"TESTED_ON\"},{\"attribute_alias\":\"TEST_OK_FLAG\"},{\"attribute_alias\":\"TESTER__LABEL\"},{\"attribute_alias\":\"EFFORT\"},{\"attribute_alias\":\"TICKET__LABEL\",\"caption\":\"Fehler-Ticket\"},{\"attribute_alias\":\"TESTED_VERSION\"},{\"attribute_alias\":\"COMMENT\"}],\"sorters\":[{\"attribute_alias\":\"TESTED_ON\",\"direction\":\"DESC\"}],\"buttons\":[{\"action_alias\":\"exface.Core.ShowObjectEditDialog\",\"bind_to_double_click\":true},{\"action_alias\":\"exface.Core.DeleteObject\"}]}]}]}",
-            "LABEL": "Testplan (aktiv)",
             "ALIAS": "TEST_PLAN_ACTIVE",
             "DATA_ADDRESS": "test_plan"
         }

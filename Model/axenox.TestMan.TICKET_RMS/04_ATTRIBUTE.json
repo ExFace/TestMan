@@ -74,8 +74,12 @@
             "attribute_alias": "COMMENTS"
         },
         {
-            "name": "LABEL",
-            "attribute_alias": "LABEL"
+            "name": "NAME",
+            "attribute_alias": "NAME"
+        },
+        {
+            "name": "RELATION_CARDINALITY",
+            "attribute_alias": "RELATION_CARDINALITY"
         },
         {
             "name": "ALIAS",
@@ -178,7 +182,8 @@
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "Exception",
+            "NAME": "Exception",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "EXCEPTION",
             "DATATYPE": "0x31310000000000000000000000000000",
             "DATA_ADDRESS": "",
@@ -219,7 +224,8 @@
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "Soll-Beschreibung",
+            "NAME": "Soll-Beschreibung",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "SOLL",
             "DATATYPE": "0x31310000000000000000000000000000",
             "DATA_ADDRESS": "",
@@ -260,7 +266,8 @@
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "DB-Nutzer\/Schema",
+            "NAME": "DB-Nutzer\/Schema",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "DBSCHEMA",
             "DATATYPE": "0x30000000000000000000000000000000",
             "DATA_ADDRESS": "",
@@ -301,7 +308,8 @@
             "DELETE_WITH_RELATED_OBJECT": null,
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "Mandant",
+            "NAME": "Mandant",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "MANDANT",
             "DATATYPE": "0x31000000000000000000000000000000",
             "DATA_ADDRESS": "",
@@ -342,7 +350,8 @@
             "DELETE_WITH_RELATED_OBJECT": "0",
             "DEFAULT_DISPLAY_UXON": null,
             "COMMENTS": "",
-            "LABEL": "System",
+            "NAME": "System",
+            "RELATION_CARDINALITY": "",
             "ALIAS": "SYSTEM",
             "DATATYPE": "0x11e7b0277435425e98350205857feb80",
             "DATA_ADDRESS": "",
