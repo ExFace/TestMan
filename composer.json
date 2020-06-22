@@ -1,37 +1,36 @@
 {
-    "name": "axenox/TestMan",
-    "description": "Testmanager app for managing and tracking test cases",
-    "type": "library",
-    "license": "GPL-3.0+",
-    "authors": [
-        {
-            "name": "Andrej Kabachnik",
-            "email": "kabachnik@gmail.com",
-            "role": "Creator"
-        }
-    ],
-    "support": {
-        "issues": "https://github.com/axenox/TestMan/issues"
-    },
-    "require": {
-        "exface/core": "~0.1"
-    },
-    "extra": {
-        "app": {
-            "app_uid": "0x31370000000000000000000000000000",
-            "app_alias": "axenox.TestMan",
-            "model_md5": "4bc905762386b66a41ffbce75fdb3e72",
-            "model_timestamp": "2018-10-16 10:40:28"
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "axenox\\TestMan\\": ""
-        },
-        "exclude-from-classmap": [
-            "/Config/",
-            "/Translations/",
-            "/Model/"
-        ]
-    }
+	"name" : "axenox/TestMan",
+	"description" : "Testmanager app for managing and tracking test cases",
+	"type" : "library",
+	"license" : "GPL-3.0+",
+	"authors" : [{
+			"name" : "Andrej Kabachnik",
+			"email" : "kabachnik@gmail.com",
+			"role" : "Creator"
+		}
+	],
+	"support" : {
+		"issues" : "https://github.com/axenox/TestMan/issues"
+	},
+	"require" : {
+		"exface/core" : "~0.1||^1.0"
+	},
+	"extra" : {
+		"app" : {
+			"app_uid" : "0x31370000000000000000000000000000",
+			"app_alias" : "axenox.TestMan",
+			"model_md5" : "9f1726553d8b0150303343a073c047a5",
+			"model_timestamp" : "2018-10-16 10:40:28"
+		}
+	},
+	"autoload" : {
+		"psr-4" : {
+			"axenox\\TestMan\\" : ""
+		},
+		"exclude-from-classmap" : [
+			"/Config/",
+			"/Translations/",
+			"/Model/"
+		]
+	}
 }
