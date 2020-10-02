@@ -60,7 +60,7 @@
             "APP": "0x31370000000000000000000000000000",
             "LABEL": "TestMan local",
             "CONNECTOR": "exface\/Core\/DataConnectors\/MySqlConnector.php",
-            "CONFIG": "{\"host\":\"localhost\",\"dbase\":\"exf_testman\",\"user\":\"root\",\"character_set\":\"utf8\",\"connection_method\":\"SET CHARACTER SET\",\"password\":\"\",\"relation_matcher\":\"\/(?<alias>(?<table>.*))_(?<key>id)\/i\"}",
+            "CONFIG": "{\"host\":\"127.0.0.1\",\"dbase\":\"exf_testman\",\"user\":\"root\",\"character_set\":\"utf8\",\"connection_method\":\"SET CHARACTER SET\",\"password\":\"\",\"relation_matcher\":\"\/(?<alias>(?<table>.*))_(?<key>id)\/i\"}",
             "READONLY": "0",
             "ALIAS": "TESTMAN_DEV",
             "FILTER_CONTEXT": ""
